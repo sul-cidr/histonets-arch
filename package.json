@@ -1,0 +1,73 @@
+{
+  "name": "histonets",
+  "version": "1.0.0",
+  "description": "Histones is an application to turn scanned images of maps into network data",
+  "main": "",
+  "repository": "https://github.com/sul-cidr/histonets-arch.git",
+  "author": "Javier de la Rosa <versae@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "node_modules/.bin/jest",
+    "test:update": "node_modules/.bin/jest -u",
+    "coverage": "node_modules/.bin/jest --coverage",
+    "build": "node_modules/.bin/webpack -p",
+    "lint": "node_modules/.bin/eslint assets/**/*.{js,jsx} webpack/*.{js,jsx} --quiet",
+    "precommit": "lint-staged",
+    "dev": "./node_modules/.bin/webpack-dev-server"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "setupFiles": [
+      "./assets/config/shim.js",
+      "./assets/config/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/assets/config/",
+      "<rootDir>/assets/__tests__/__fixtures__/"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.1.4",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "lint-staged": "^5.0.0",
+    "prettier": "^1.7.4",
+    "prettier-eslint": "^8.2.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-bundle-tracker": "^0.3.0",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
