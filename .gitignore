@@ -52,7 +52,7 @@ coverage.xml
 
 # Django stuff:
 staticfiles/
-assets/
+assets/bundles
 
 # Sphinx documentation
 docs/_build/
@@ -282,11 +282,10 @@ tags
 pyvenv.cfg
 pip-selfcheck.json
 
-
-
-
+# Histonets
 histonets/media/
 compose/production/cantaloupe/cantaloupe.properties
+webpack-stats.json
 
 # Added to maintain local compose files which are ignored by something above.
 # See issue https://github.com/pydanny/cookiecutter-django/issues/1321

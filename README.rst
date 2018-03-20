@@ -40,6 +40,7 @@ To run the tests, check your test coverage, and generate an HTML coverage report
     $ coverage run manage.py test
     $ coverage html
     $ open htmlcov/index.html
+    $ yarn coverage
 
 Running tests with py.test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -48,6 +49,11 @@ Running tests with py.test
 
   $ py.test
 
+And for JS files
+
+::
+
+  $ yarn dev
 
 Live reloading and Sass CSS compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,6 +62,7 @@ Moved to `Live reloading and SASS compilation`_.
 
 .. _`Live reloading and SASS compilation`: http://cookiecutter-django.readthedocs.io/en/latest/live-reloading-and-sass-compilation.html
 
+Webpack hot reloading is also supported by default when files in ``assets`` are modified.
 
 
 Celery
@@ -90,7 +97,7 @@ IIIF Image Server
 ^^^^^^^^^^^^^^^^^
 
 A dockerized version of Cantaloupe is also available and setup in the compose config file. The service
-takes a number of properties defined in a `cantaloupe.properties` file and it starts by default at ``http://127.0.0.1:8182`` with the admin interface at ``http://127.0.0.1:8182/admin``.
+takes a number of properties defined in a ``cantaloupe.properties`` file and it starts by default at ``http://127.0.0.1:8182`` with the admin interface at ``http://127.0.0.1:8182/admin``.
 
 Images placed in ``/media/iiif`` will get IIIF by default. For example, the image ``/media/iiif/ghostdriver.jpg`` will have its ``info.json`` descriptor at ``http://localhost:8182/iiif/2/ghostdriver.jpg/info.json``, and the image itself will be available at ``http://localhost:8182/iiif/2/ghostdriver.jpg/full/full/0/default.jpg``.
 
@@ -100,9 +107,9 @@ Docker
 
 A docker-compose config file is provided for local development. For convenience, a couple of scripts are include as well:
 
-* ``run.sh``, that runs a command inside a specific container (e.g., ``./run.sh django flake8``)
+* ``scripts/run.sh``, that runs a command inside a specific container (e.g., ``./scripts/run.sh django flake8``)
 
-* ``dev.sh``, that starts all servers and builds, recreates, or removes images if necessary.
+* ``scripts/dev.sh``, that starts all servers and builds, recreates, or removes images if necessary.
 
 
 Deployment

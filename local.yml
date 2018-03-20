@@ -22,6 +22,18 @@ services:
       - "8000:8000"
     command: /start.sh
 
+  webpack:
+    build:
+      context: .
+      dockerfile: ./compose/local/webpack/Dockerfile
+    volumes:
+      - .:/app
+    env_file:
+      - ./.envs/.local/.webpack
+    ports:
+      - "8080:8080"
+    command: /start-webpack.sh
+
   postgres:
     build:
       context: .
