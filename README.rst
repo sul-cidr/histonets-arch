@@ -53,7 +53,7 @@ And for JS files
 
 ::
 
-  $ yarn dev
+  $ yarn test
 
 Live reloading and Sass CSS compilation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -110,6 +110,8 @@ A docker-compose config file is provided for local development. For convenience,
 * ``scripts/run.sh``, that runs a command inside a specific container (e.g., ``./scripts/run.sh django flake8``)
 
 * ``scripts/dev.sh``, that starts all servers and builds, recreates, or removes images if necessary.
+
+* ``scripts/destroy.sh``, that removes all containers, Docker images, and orphans. The option ``--volumes`` can also be passed in to remove all associated volumes (such as those use by PostgreSQL).
 
 
 Deployment

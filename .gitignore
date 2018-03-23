@@ -283,7 +283,7 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # Histonets
-histonets/media/
+media/
 compose/production/cantaloupe/cantaloupe.properties
 webpack-stats.json
 

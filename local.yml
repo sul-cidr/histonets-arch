@@ -57,7 +57,7 @@ services:
       context: .
       dockerfile: ./compose/local/cantaloupe/Dockerfile
     volumes:
-      - ./histonets/media/iiif:/var/lib/cantaloupe/images
+      - ./media/iiif:/var/lib/cantaloupe/images
     ports:
       - "8182:8182"
 
