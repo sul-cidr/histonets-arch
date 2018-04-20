@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static i18n compress%}
+{% load iiif %}
+
+{% block content %}
+  <h1>Collections</h1>
+  <div class="container-fluid">
+  {% for collection in collections %}
+    <div class="row collection-item">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-5">
+            <h2><a href="/collections/529">{{ collection.label }}</a></h2>
+              <p>{{ collection.description|default:"Description" }}.</p>
+          </div>
+          <div class="col-5">
+            {% for image in collection.images.all|slice:":4" %}
+              <img class="img-fluid float-left" src="{% transform_iiif_image image.uri size='100,' %}" />
+            {% endfor %}
+          </div>
+          <div class="col-2">
+            <div class="btn-group pull-right" role="group">
+              <div class="crud-buttons">
+                <a class="btn btn-primary" href="">Start</a>
+                <a class="btn btn-secondary" href="{% url 'collections:edit' pk=collection.pk %}">Edit</a>
+                <a class="btn btn-danger" rel="nofollow" href="{% url 'collections:delete' pk=collection.pk %}">Delete</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <em class="text-muted">
+          Status: Unstarted ·
+          {% with num_images=collection.images.count %}
+            {{ num_images }} image{{ num_images|pluralize }}.
+          {% endwith %}
+        </em>
+      </div>
+    </div>
+  {% endfor %}
+    <div class="row">
+      <a class="btn btn-primary" href="{% url 'collections:create' %}">New Collection</a>
+    </div>
+  </div>
+{% endblock content %}
