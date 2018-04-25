@@ -107,7 +107,9 @@ Docker
 
 A docker-compose config file is provided for local development. For convenience, a couple of scripts are include as well:
 
-* ``scripts/run.sh``, that runs a command inside a specific container (e.g., ``./scripts/run.sh django flake8``)
+* ``scripts/exec.sh``, that runs a command inside a specific container (e.g., ``./scripts/run.sh django flake8``)
+
+* ``scripts/run.sh``, that runs a command in a new container instance (e.g., ``./scripts/run.sh django flake8``)
 
 * ``scripts/dev.sh``, that starts all servers and builds, recreates, or removes images if necessary.
 
