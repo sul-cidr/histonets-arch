@@ -73,6 +73,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'histonets.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'histonets.collections.apps.CollectionsConfig',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -166,9 +167,15 @@ WEBPACK_LOADER = {
 # MEDIA
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#media-root
-MEDIA_ROOT = str(APPS_DIR('media'))
+MEDIA_ROOT = str(ROOT_DIR('media'))
 # https://docs.djangoproject.com/en/dev/ref/settings/#media-url
 MEDIA_URL = '/media/'
+
+# IIIF
+# ------------------------------------------------------------------------------
+IIIF_DIR = 'iiif'  # Relative to the default storage, e.g., /media/iiif
+IIIF_CANONICAL_URI = "{}/iiif/2/{{}}/full/max/0/default.jpg".format(env('CANTALOUPE_SERVER'))
+IIIF_IMAGE_FORMATS = ["jpg", "jpeg", "tif", "tiff", "gif", "png"]
 
 # TEMPLATES
 # ------------------------------------------------------------------------------
@@ -265,5 +272,9 @@ SOCIALACCOUNT_ADAPTER = 'histonets.users.adapters.SocialAccountAdapter'
 # https://django-compressor.readthedocs.io/en/latest/quickstart/#installation
 INSTALLED_APPS += ['compressor']
 STATICFILES_FINDERS += ['compressor.finders.CompressorFinder']
-# Your stuff...
+COMPRESS_PRECOMPILERS = (
+    ('text/x-sass', 'sass {infile} {outfile}'),
+)
+
+# Histonets
 # ------------------------------------------------------------------------------

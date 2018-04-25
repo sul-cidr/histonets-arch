@@ -1,6 +1,7 @@
-var path = require("path");
-var webpack = require('webpack');
-var BundleTracker = require('webpack-bundle-tracker');
+const path = require("path");
+const webpack = require('webpack');
+const BundleTracker = require('webpack-bundle-tracker');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const devServer = {
   hot: true,
@@ -27,6 +28,11 @@ module.exports = {
       'babel-polyfill',
       'react-hot-loader/patch',
       './assets/home'
+    ],
+    'collections.create': [
+      'babel-polyfill',
+      'react-hot-loader/patch',
+      './assets/collections.create'
     ]
   },
   devServer,
@@ -39,6 +45,12 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new BundleTracker({filename: './webpack-stats.json'}),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    })
   ],
   module: {
     rules: [
@@ -46,11 +58,25 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      }
+      },
+      {
+        test: /\.scss/,
+        use: [
+          // MiniCssExtractPlugin.loader,
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              module: true
+            }
+          },
+          "fast-sass-loader"
+        ]
+      },
     ]
   },
   resolve: {
     modules: ['node_modules', 'bower_components'],
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.css', '.scss']
   }
 };

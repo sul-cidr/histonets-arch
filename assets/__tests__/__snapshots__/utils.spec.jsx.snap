@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`utils getCookie returns a cookie value from document.cookie 1`] = `"value"`;
+
+exports[`utils getCookie returns nothing when cookie is an empty string 1`] = `"value"`;
+
+exports[`utils getCookie returns nothing when no cookie is set in document.cookie 1`] = `"value"`;
+
+exports[`utils getCookie returns nothing when the cookie is not present in document.cookie 1`] = `null`;
+
+exports[`utils removeDuplicates removes duplicates by key 1`] = `
+Array [
+  Object {
+    "key": 1,
+  },
+]
+`;

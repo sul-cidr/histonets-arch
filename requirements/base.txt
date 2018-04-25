@@ -21,4 +21,4 @@ django-webpack-loader==0.6.0  # https://github.com/ezhome/django-webpack-loader
 
 # Histonets
 #-------------------------------------------------------------------------------
-git+git://github.com/sul-cidr/histonets-cv.git#egg=histonets
+#git+git://github.com/sul-cidr/histonets-cv.git#egg=histonets

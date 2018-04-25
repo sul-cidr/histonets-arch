@@ -1,0 +1,4205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CollectionCreate> getGalleryImages retrieves images from state 1`] = `
+Array [
+  Object {
+    "caption": "image1",
+    "isSelected": false,
+    "src": "http://localhost:8182/iiif/2/image1.jpg/square/300,/0/default.jpg",
+    "thumbnail": "http://localhost:8182/iiif/2/image1.jpg/square/300,/0/default.jpg",
+    "thumbnailCaption": "image1",
+    "thumbnailHeight": 300,
+    "thumbnailWidth": 300,
+  },
+  Object {
+    "caption": "image2",
+    "isSelected": true,
+    "src": "http://localhost:8182/iiif/2/image2.jpg/square/300,/0/default.jpg",
+    "thumbnail": "http://localhost:8182/iiif/2/image2.jpg/square/300,/0/default.jpg",
+    "thumbnailCaption": "image2",
+    "thumbnailHeight": 300,
+    "thumbnailWidth": 300,
+  },
+]
+`;
+
+exports[`<CollectionCreate> getGalleryImages retrieves images from state 2`] = `
+Array [
+  Object {
+    "caption": "image1",
+    "isSelected": false,
+    "src": "http://localhost:8182/iiif/2/image1.jpg/square/300,/0/default.jpg",
+    "thumbnail": "http://localhost:8182/iiif/2/image1.jpg/square/300,/0/default.jpg",
+    "thumbnailCaption": "image1",
+    "thumbnailHeight": 300,
+    "thumbnailWidth": 300,
+  },
+  Object {
+    "caption": "image2",
+    "isSelected": true,
+    "src": "http://localhost:8182/iiif/2/image2.jpg/square/300,/0/default.jpg",
+    "thumbnail": "http://localhost:8182/iiif/2/image2.jpg/square/300,/0/default.jpg",
+    "thumbnailCaption": "image2",
+    "thumbnailHeight": 300,
+    "thumbnailWidth": 300,
+  },
+]
+`;
+
+exports[`<CollectionCreate> getImagesFromUri retrieves images from a IIIF canonical image URI 1`] = `
+Object {
+  "images": Array [
+    Object {
+      "label": "image1",
+      "selected": false,
+      "uri": "http://localhost:8182/iiif/2/image1.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image2",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image2.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image.jpg",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image.jpg/full/max/0/default.jpg",
+    },
+  ],
+  "mimes": Array [
+    "image/png",
+    "image/jpg",
+  ],
+  "progress": Object {},
+}
+`;
+
+exports[`<CollectionCreate> getImagesFromUri retrieves images from a manifest 1`] = `
+Object {
+  "images": Array [
+    Object {
+      "label": "image1",
+      "selected": false,
+      "uri": "http://localhost:8182/iiif/2/image1.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image2",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image2.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "Front outside binding",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_fob_TC_46/full/6686,/0/default.jpg",
+    },
+    Object {
+      "label": "Front inside binding",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_fib_TC_46/full/6256,/0/default.jpg",
+    },
+    Object {
+      "label": "f. ir",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_i_R_TC_46/full/6101,/0/default.jpg",
+    },
+    Object {
+      "label": "f. iv",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_i_V_TC_46/full/6008,/0/default.jpg",
+    },
+    Object {
+      "label": "f. iir",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_ii_R_TC_46/full/6070,/0/default.jpg",
+    },
+    Object {
+      "label": "f. iiv",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_ii_V_TC_46/full/6007,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 1r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_001_R_TC_46/full/5800,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 1v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_001_V_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 2r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_002_R_TC_46/full/5800,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 2v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_002_V_TC_46/full/5743,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 3r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_003_R_TC_46/full/5903,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 3v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_003_V_TC_46/full/5799,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 4r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_004_R_TC_46/full/5896,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 4v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_004_V_TC_46/full/5839,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 5r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_005_R_TC_46/full/5880,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 5v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_005_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 6r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_006_R_TC_46/full/5984,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 6v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_006_V_TC_46/full/5887,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 7r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_007_R_TC_46/full/5944,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 7v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_007_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 8r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_008_R_TC_46/full/5920,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 8v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_008_V_TC_46/full/5871,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 9r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_009_R_TC_46/full/5910,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 9v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_009_V_TC_46/full/5790,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 9ar",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_009a_R_TC_46/full/6024,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 9av",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_009a_V_TC_46/full/5934,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 9br",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_009b_R_TC_46/full/6000,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 9bv",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_009b_V_TC_46/full/5950,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 10r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_010_R_TC_46/full/5976,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 10v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_010_V_TC_46/full/5863,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 11r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_011_R_TC_46/full/5631,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 11v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_011_V_TC_46/full/5511,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 12r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_012_R_TC_46/full/5655,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 12v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_012_V_TC_46/full/5566,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 13r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_013_R_TC_46/full/5896,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 13v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_013_V_TC_46/full/5823,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 14r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_014_R_TC_46/full/5888,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 14v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_014_V_TC_46/full/5831,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 15r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_015_R_TC_46/full/5880,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 15v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_015_V_TC_46/full/5823,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 16r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_016_R_TC_46/full/5784,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 16v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_016_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 17r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_017_R_TC_46/full/5800,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 17v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_017_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 18r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_018_R_TC_46/full/5694,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 18v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_018_V_TC_46/full/5575,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 19r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_019_R_TC_46/full/5784,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 19v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_019_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 20r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_020_R_TC_46/full/5856,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 20v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_020_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 21r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_021_R_TC_46/full/5848,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 21v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_021_V_TC_46/full/5702,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 22r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_022_R_TC_46/full/5784,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 22v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_022_V_TC_46/full/5599,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 23r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_023_R_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 23v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_023_V_TC_46/full/5623,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 24r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_024_R_TC_46/full/5792,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 24v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_024_V_TC_46/full/5623,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 25r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_025_R_TC_46/full/5856,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 25v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_025_V_TC_46/full/5583,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 26r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_026_R_TC_46/full/5847,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 26v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_026_V_TC_46/full/5718,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 27r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_027_R_TC_46/full/5766,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 27v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_027_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 28r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_028_R_TC_46/full/5904,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 28v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_028_V_TC_46/full/5711,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 29r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_029_R_TC_46/full/5855,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 29v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_029_V_TC_46/full/5638,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 30r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_030_R_TC_46/full/5864,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 30v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_030_V_TC_46/full/5663,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 31r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_031_R_TC_46/full/5887,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 31v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_031_V_TC_46/full/5734,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 32r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_032_R_TC_46/full/5823,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 32v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_032_V_TC_46/full/5734,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 33r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_033_R_TC_46/full/5855,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 33v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_033_V_TC_46/full/5718,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 34r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_034_R_TC_46/full/5838,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 34v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_034_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 35r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_035_R_TC_46/full/5878,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 35v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_035_V_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 36r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_036_R_TC_46/full/5815,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 36v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_036_V_TC_46/full/5670,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 37r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_037_R_TC_46/full/5823,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 37v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_037_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 38r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_038_R_TC_46/full/5782,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 38v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_038_V_TC_46/full/5655,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 39r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_039_R_TC_46/full/5823,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 39v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_039_V_TC_46/full/5614,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 40r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_040_R_TC_46/full/5831,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 40v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_040_V_TC_46/full/5663,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 41r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_041_R_TC_46/full/5855,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 41v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_041_V_TC_46/full/5694,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 42r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_042_R_TC_46/full/5856,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 42v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_042_V_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 43r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_043_R_TC_46/full/5768,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 43v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_043_V_TC_46/full/5599,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 44r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_044_R_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 44v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_044_V_TC_46/full/5639,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 45r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_045_R_TC_46/full/5751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 45v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_045_V_TC_46/full/5607,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 46r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_046_R_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 46v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_046_V_TC_46/full/5735,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 47r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_047_R_TC_46/full/5138,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 47v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_047_V_TC_46/full/5135,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 48r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_048_R_TC_46/full/5087,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 48v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_048_V_TC_46/full/4999,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 49r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_049_R_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 49v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_049_V_TC_46/full/5599,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 50r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_050_R_TC_46/full/5752,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 50v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_050_V_TC_46/full/5655,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 51r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_051_R_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 51v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_051_V_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 52r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_052_R_TC_46/full/5623,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 52v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_052_V_TC_46/full/5551,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 53r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_053_R_TC_46/full/5696,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 53v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_053_V_TC_46/full/5591,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 54r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_054_R_TC_46/full/5270,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 54v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_054_V_TC_46/full/5239,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 55r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_055_R_TC_46/full/5712,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 55v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_055_V_TC_46/full/5599,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 56r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_056_R_TC_46/full/5144,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 56v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_056_V_TC_46/full/5134,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 57r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_057_R_TC_46/full/5545,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 57v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_057_V_TC_46/full/5582,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 58r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_058_R_TC_46/full/5744,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 58v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_058_V_TC_46/full/5615,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 59r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_059_R_TC_46/full/6040,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 59v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_059_V_TC_46/full/5983,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 60r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_060_R_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 60v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_060_V_TC_46/full/5663,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 61r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_061_R_TC_46/full/5736,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 61v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_061_V_TC_46/full/5655,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 62r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_062_R_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 62v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_062_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 63r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_063_R_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 63v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_063_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 64r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_064_R_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 64v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_064_V_TC_46/full/5695,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 65r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_065_R_TC_46/full/5712,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 65v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_065_V_TC_46/full/5687,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 66r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_066_R_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 66v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_066_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 67r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_067_R_TC_46/full/5711,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 67v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_067_V_TC_46/full/5687,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 68r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_068_R_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 68v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_068_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 69r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_069_R_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 69v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_069_V_TC_46/full/5695,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 70r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_070_R_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 70v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_070_V_TC_46/full/5646,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 71r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_071_R_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 71v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_071_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 72r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_072_R_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 72v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_072_V_TC_46/full/5663,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 73r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_073_R_TC_46/full/5751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 73v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_073_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 74r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_074_R_TC_46/full/5751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 74v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_074_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 75r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_075_R_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 75v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_075_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 76r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_076_R_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 76v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_076_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 77r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_077_R_TC_46/full/5752,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 77v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_077_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 78r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_078_R_TC_46/full/5760,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 78v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_078_V_TC_46/full/5654,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 79r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_079_R_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 79v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_079_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 80r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_080_R_TC_46/full/5824,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 80v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_080_V_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 81r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_081_R_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 81v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_081_V_TC_46/full/5694,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 82r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_082_R_TC_46/full/5816,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 82v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_082_V_TC_46/full/5702,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 83r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_083_R_TC_46/full/5816,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 83v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_083_V_TC_46/full/5655,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 84r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_084_R_TC_46/full/5823,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 84v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_084_V_TC_46/full/5687,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 85r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_085_R_TC_46/full/5815,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 85v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_085_V_TC_46/full/5695,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 86r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_086_R_TC_46/full/5774,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 86v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_086_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 87r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_087_R_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 87v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_087_V_TC_46/full/5711,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 88r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_088_R_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 88v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_088_V_TC_46/full/5711,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 89r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_089_R_TC_46/full/4761,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 89v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_089_V_TC_46/full/4743,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 89ar",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_089a_R_TC_46/full/4815,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 89av",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_089a_V_TC_46/full/4646,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 90r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_090_R_TC_46/full/5694,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 90v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_090_V_TC_46/full/5722,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 91r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_091_R_TC_46/full/5815,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 91v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_091_V_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 92r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_092_R_TC_46/full/5462,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 92v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_092_V_TC_46/full/5438,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 93r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_093_R_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 93v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_093_V_TC_46/full/5735,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 94r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_094_R_TC_46/full/5741,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 94v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_094_V_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 95r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_095_R_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 95v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_095_V_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 96r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_096_R_TC_46/full/5661,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 96v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_096_V_TC_46/full/5663,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 97r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_097_R_TC_46/full/5782,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 97v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_097_V_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 98r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_098_R_TC_46/full/5799,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 98v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_098_V_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 99r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_099_R_TC_46/full/4822,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 99v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_099_V_TC_46/full/4822,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 100r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_100_R_TC_46/full/5732,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 100v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_100_V_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 101r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_101_R_TC_46/full/5774,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 101v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_101_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 102r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_102_R_TC_46/full/5789,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 102v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_102_V_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 103r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_103_R_TC_46/full/5774,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 103v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_103_V_TC_46/full/5743,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 104r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_104_R_TC_46/full/5740,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 104v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_104_V_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 105r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_105_R_TC_46/full/5749,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 105v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_105_V_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 106r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_106_R_TC_46/full/5645,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 106v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_106_V_TC_46/full/5583,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 107r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_107_R_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 107v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_107_V_TC_46/full/5471,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 108r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_108_R_TC_46/full/6173,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 108v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_108_V_TC_46/full/6238,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 109r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_109_R_TC_46/full/5640,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 109v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_109_V_TC_46/full/5639,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 110r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_110_R_TC_46/full/5020,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 110v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_110_V_TC_46/full/4975,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 111r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_111_R_TC_46/full/5035,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 111v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_111_V_TC_46/full/4959,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 112r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_112_R_TC_46/full/5646,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 112v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_112_V_TC_46/full/5535,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 113r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_113_R_TC_46/full/5789,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 113v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_113_V_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 114r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_114_R_TC_46/full/5685,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 114v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_114_V_TC_46/full/5591,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 115r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_115_R_TC_46/full/5638,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 115v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_115_V_TC_46/full/5567,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 116r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_116_R_TC_46/full/5821,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 116v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_116_V_TC_46/full/5742,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 117r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_117_R_TC_46/full/5566,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 117v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_117_V_TC_46/full/5455,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 118r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_118_R_TC_46/full/5838,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 118v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_118_V_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 119r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_119_R_TC_46/full/5862,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 119v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_119_V_TC_46/full/5798,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 120r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_120_R_TC_46/full/5870,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 120v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_120_V_TC_46/full/5782,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 121r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_121_R_TC_46/full/5878,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 121v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_121_V_TC_46/full/5782,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 122rFLD A",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_122_R_FLD_A_TC_46/full/5088,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 122rFLD O",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_122_R_FLD_O_TC_46/full/8634,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 122vFLD A",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_122_V_FLD_A_TC_46/full/5118,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 122rFLD O",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%2F487_122_R_FLD_O_TC_46/full/8634,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 123rFLD A",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_123_R_FLD_A_TC_46/full/5877,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 123rFLD B",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_123_R_FLD_B_TC_46/full/5718,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 123rFLD C",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_123_R_FLD_C_TC_46/full/5877,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 123v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_123_V_TC_46/full/5758,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 124r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_124_R_TC_46/full/5846,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 124v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_124_V_TC_46/full/5751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 125r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_125_R_TC_46/full/5693,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 125v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_125_V_TC_46/full/5616,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 126r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_126_R_TC_46/full/4513,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 126v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_126_V_TC_46/full/4350,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 127r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_127_R_TC_46/full/5378,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 127v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_127_V_TC_46/full/5342,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 128r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_128_R_TC_46/full/5338,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 128v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_128_V_TC_46/full/5632,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 129r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_129_R_TC_46/full/5661,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 129v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_129_V_TC_46/full/5664,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 130r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_130_R_TC_46/full/5119,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 130v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_130_V_TC_46/full/4996,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 130ar",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_130a_R_TC_46/full/5111,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 130av",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_130a_V_TC_46/full/5021,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 131r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_131_R_TC_46/full/5688,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 131v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_131_V_TC_46/full/5623,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 132r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_132_R_TC_46/full/5790,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 132v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_132_V_TC_46/full/5697,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 133r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_133_R_TC_46/full/5669,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 133v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_133_V_TC_46/full/5640,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 134r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_134_R_TC_46/full/5610,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 134v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_134_V_TC_46/full/5655,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 135r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_135_R_TC_46/full/5405,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 135v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_135_V_TC_46/full/5439,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 136r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_136_R_TC_46/full/5046,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 136v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_136_V_TC_46/full/5029,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 137r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_137_R_TC_46/full/5019,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 137v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_137_V_TC_46/full/4982,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 138r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_138_R_TC_46/full/5724,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 138v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_138_V_TC_46/full/5721,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 139r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_139_R_TC_46/full/5701,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 139v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_139_V_TC_46/full/5760,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 140r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_140_R_TC_46/full/5701,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 140v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_140_V_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 141r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_141_R_TC_46/full/5677,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 141v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_141_V_TC_46/full/5735,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 142r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_142_R_TC_46/full/5788,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 142v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_142_V_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 143r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_143_R_TC_46/full/5670,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 143v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_143_V_TC_46/full/5575,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 144r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_144_R_TC_46/full/5806,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 144v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_144_V_TC_46/full/5830,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 145r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_145_R_TC_46/full/4837,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 145v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_145_V_TC_46/full/4791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 146r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_146_R_TC_46/full/4764,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 146v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_146_V_TC_46/full/4751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 147r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_147_R_TC_46/full/5789,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 147v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_147_V_TC_46/full/5815,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 148r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_148_R_TC_46/full/4985,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 148v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_148_V_TC_46/full/4838,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 149r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_149_R_TC_46/full/5886,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 149v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_149_V_TC_46/full/5784,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 150r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_150_R_TC_46/full/5917,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 150v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_150_V_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 151r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_151_R_TC_46/full/5901,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 151v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_151_V_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 152r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_152_R_TC_46/full/5139,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 152v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_152_V_TC_46/full/4998,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 153r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_153_R_TC_46/full/5222,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 153v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_153_V_TC_46/full/4886,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 154r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_154_R_TC_46/full/5112,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 154v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_154_V_TC_46/full/4863,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 155r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_155_R_TC_46/full/5878,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 155v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_155_V_TC_46/full/5695,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 156r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_156_R_TC_46/full/5503,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 156v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_156_V_TC_46/full/5399,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 157r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_157_R_TC_46/full/5902,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 157v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_157_V_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 158r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_158_R_TC_46/full/4950,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 158v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_158_V_TC_46/full/4854,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 159r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_159_R_TC_46/full/5845,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 159v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_159_V_TC_46/full/5742,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 160r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_160_R_TC_46/full/5796,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 160v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_160_V_TC_46/full/5693,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 161r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_161_R_TC_46/full/5810,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 161v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_161_V_TC_46/full/5734,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 162r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_162_R_TC_46/full/5753,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 162v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_162_V_TC_46/full/5930,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 163r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_163_R_TC_46/full/5853,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 163v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_163_V_TC_46/full/5837,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 164r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_164_R_TC_46/full/5545,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 164v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_164_V_TC_46/full/5591,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 165r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_165_R_TC_46/full/5837,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 165v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_165_V_TC_46/full/5846,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 166r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_166_R_TC_46/full/5804,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 166v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_166_V_TC_46/full/5894,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 167r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_167_R_TC_46/full/5777,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 167v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_167_V_TC_46/full/5854,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 168r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_168_R_TC_46/full/5101,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 168v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_168_V_TC_46/full/5702,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 169r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_169_R_TC_46/full/5812,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 169v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_169_V_TC_46/full/5951,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 170r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_170_R_TC_46/full/5828,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 170v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_170_V_TC_46/full/5991,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 171r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_171_R_TC_46/full/5797,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 171v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_171_V_TC_46/full/5871,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 172r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_172_R_TC_46/full/5917,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 172v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_172_V_TC_46/full/6008,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 173r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_173_R_TC_46/full/5901,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 173v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_173_V_TC_46/full/6039,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 174r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_174_R_TC_46/full/5053,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 174v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_174_V_TC_46/full/5118,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 175r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_175_R_TC_46/full/5918,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 175v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_175_V_TC_46/full/6024,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 176r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_176_R_TC_46/full/5602,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 176v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_176_V_TC_46/full/5598,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 177r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_177_R_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 177v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_177_V_TC_46/full/6007,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 178r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_178_R_TC_46/full/5878,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 178v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_178_V_TC_46/full/6048,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 179r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_179_R_TC_46/full/5902,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 179v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_179_V_TC_46/full/5927,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 180r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_180_R_TC_46/full/5644,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 180v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_180_V_TC_46/full/5575,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 181r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_181_R_TC_46/full/5530,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 181v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_181_V_TC_46/full/5743,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 182r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_182_R_TC_46/full/5886,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 182v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_182_V_TC_46/full/5887,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 183r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_183_R_TC_46/full/5830,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 183v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_183_V_TC_46/full/5846,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 184r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_184_R_TC_46/full/5525,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 184v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_184_V_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 185r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_185_R_TC_46/full/5774,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 185v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_185_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 186r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_186_R_TC_46/full/4790,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 186v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_186_V_TC_46/full/4799,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 187r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_187_R_TC_46/full/4790,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 187v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_187_V_TC_46/full/4854,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 188r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_188_R_TC_46/full/5781,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 188v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_188_V_TC_46/full/5870,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 189r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_189_R_TC_46/full/5804,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 189v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_189_V_TC_46/full/5862,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 190r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_190_R_TC_46/full/5054,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 190v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_190_V_TC_46/full/5030,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 191r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_191_R_TC_46/full/5266,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 191v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_191_V_TC_46/full/5254,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 192r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_192_R_TC_46/full/5878,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 192v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_192_V_TC_46/full/5870,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 193r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_193_R_TC_46/full/5885,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 193v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_193_V_TC_46/full/5990,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 194r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_194_R_TC_46/full/5885,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 194v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_194_V_TC_46/full/5991,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 195r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_195_R_TC_46/full/5155,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 195v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_195_V_TC_46/full/5183,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 196r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_196_R_TC_46/full/5117,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 196v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_196_V_TC_46/full/5175,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 197r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_197_R_TC_46/full/5933,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 197v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_197_V_TC_46/full/6047,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 198r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_198_R_TC_46/full/6013,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 198v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_198_V_TC_46/full/6063,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 199r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_199_R_TC_46/full/5853,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 199v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_199_V_TC_46/full/5991,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 200r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_200_R_TC_46/full/4721,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 200v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_200_V_TC_46/full/4854,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 201r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_201_R_TC_46/full/5862,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 201v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_201_V_TC_46/full/5903,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 202r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_202_R_TC_46/full/5861,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 202v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_202_V_TC_46/full/6008,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 203r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_203_R_TC_46/full/5909,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 203v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_203_V_TC_46/full/6031,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 204r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_204_R_TC_46/full/5868,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 204v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_204_V_TC_46/full/5911,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 205r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_205_R_TC_46/full/5852,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 205v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_205_V_TC_46/full/5855,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 206r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_206_R_TC_46/full/5900,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 206v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_206_V_TC_46/full/5983,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 207r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_207_R_TC_46/full/5875,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 207v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_207_V_TC_46/full/5967,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 208r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_208_R_TC_46/full/5869,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 208v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_208_V_TC_46/full/5951,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 209r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_209_R_TC_46/full/5828,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 209v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_209_V_TC_46/full/5919,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 210r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_210_R_TC_46/full/5629,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 210v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_210_V_TC_46/full/5686,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 211r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_211_R_TC_46/full/5789,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 211v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_211_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 212r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_212_R_TC_46/full/5789,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 212v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_212_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 213r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_213_R_TC_46/full/5836,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 213v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_213_V_TC_46/full/5904,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 214r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_214_R_TC_46/full/4777,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 214v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_214_V_TC_46/full/4886,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 215r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_215_R_TC_46/full/5766,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 215v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_215_V_TC_46/full/5975,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 216r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_216_R_TC_46/full/5812,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 216v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_216_V_TC_46/full/5958,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 217r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_217_R_TC_46/full/5176,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 217v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_217_V_TC_46/full/5295,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 218r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_218_R_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 218v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_218_V_TC_46/full/5982,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 219r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_219_R_TC_46/full/5812,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 219v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_219_V_TC_46/full/5974,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 220r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_220_R_TC_46/full/4926,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 220v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_220_V_TC_46/full/5102,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 221r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_221_R_TC_46/full/4970,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 221v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_221_V_TC_46/full/4999,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 222r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_222_R_TC_46/full/5918,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 222v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_222_V_TC_46/full/5936,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 223r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_223_R_TC_46/full/4919,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 223v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_223_V_TC_46/full/4917,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 224r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_224_R_TC_46/full/5918,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 224v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_224_V_TC_46/full/5904,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 225r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_225_R_TC_46/full/5862,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 225v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_225_V_TC_46/full/5871,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 226r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_226_R_TC_46/full/5918,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 226v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_226_V_TC_46/full/5920,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 227r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_227_R_TC_46/full/5886,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 227v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_227_V_TC_46/full/5912,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 228r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_228_R_TC_46/full/5733,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 228v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_228_V_TC_46/full/5728,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 229r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_229_R_TC_46/full/5741,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 229v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_229_V_TC_46/full/5745,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 230r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_230_R_TC_46/full/5893,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 230v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_230_V_TC_46/full/5897,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 231r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_231_R_TC_46/full/4262,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 231v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_231_V_TC_46/full/4311,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 232r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_232_R_TC_46/full/5886,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 232v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_232_V_TC_46/full/5912,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 233r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_233_R_TC_46/full/5862,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 233v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_233_V_TC_46/full/5864,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 234r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_234_R_TC_46/full/5784,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 234v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_234_V_TC_46/full/5856,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 235r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_235_R_TC_46/full/5055,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 235v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_235_V_TC_46/full/5135,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 236r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_236_R_TC_46/full/5142,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 236v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_236_V_TC_46/full/5175,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 237r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_237_R_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 237v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_237_V_TC_46/full/5840,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 238r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_238_R_TC_46/full/5774,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 238v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_238_V_TC_46/full/5792,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 239r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_239_R_TC_46/full/5813,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 239v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_239_V_TC_46/full/5937,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 240r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_240_R_TC_46/full/5758,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 240v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_240_V_TC_46/full/5824,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 241r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_241_R_TC_46/full/5878,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 241v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_241_V_TC_46/full/5928,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 242r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_242_R_TC_46/full/5275,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 242v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_242_V_TC_46/full/5415,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 243r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_243_R_TC_46/full/5805,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 243v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_243_V_TC_46/full/5936,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 244r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_244_R_TC_46/full/5798,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 244v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_244_V_TC_46/full/5913,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 245r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_245_R_TC_46/full/4928,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 245v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_245_V_TC_46/full/5086,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 246r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_246_R_TC_46/full/5829,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 246v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_246_V_TC_46/full/5976,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 247r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_247_R_TC_46/full/5854,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 247v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_247_V_TC_46/full/5992,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 248r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_248_R_TC_46/full/5942,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 248v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_248_V_TC_46/full/6000,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 249r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_249_R_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 249v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_249_V_TC_46/full/5664,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 250r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_250_R_TC_46/full/5902,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 250vFLD A",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_250_V_FLD_A_TC_46/full/5952,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 250vFLD O",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_250_V_FLD_O_TC_46/full/5977,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 251r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_251_R_TC_46/full/5893,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 251v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_251_V_TC_46/full/5952,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 252r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_252_R_TC_46/full/5830,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 252v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_252_V_TC_46/full/5904,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 253r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_253_R_TC_46/full/5838,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 253v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_253_V_TC_46/full/5952,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 254r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_254_R_TC_46/full/5878,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 254v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_254_V_TC_46/full/5952,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 255r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_255_R_TC_46/full/5022,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 255v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_255_V_TC_46/full/5088,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 256r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_256_R_TC_46/full/5814,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 256v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_256_V_TC_46/full/5936,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 257r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_257_R_TC_46/full/5830,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 257v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_257_V_TC_46/full/5928,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 258r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_258_R_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 258v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_258_V_TC_46/full/5888,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 259r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_259_R_TC_46/full/5642,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 259v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_259_V_TC_46/full/5712,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 260r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_260_R_TC_46/full/4919,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 260v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_260_V_TC_46/full/4928,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 261r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_261_R_TC_46/full/5524,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 261v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_261_V_TC_46/full/5632,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 262r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_262_R_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 262v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_262_V_TC_46/full/5904,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 263r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_263_R_TC_46/full/5792,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 263v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_263_V_TC_46/full/5904,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 264r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_264_R_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 264v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_264_V_TC_46/full/5760,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 265r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_265_R_TC_46/full/4961,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 265v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_265_V_TC_46/full/4890,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 266r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_266_R_TC_46/full/4834,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 266v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_266_V_TC_46/full/5008,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 267r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_267_R_TC_46/full/5842,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 267v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_267_V_TC_46/full/5928,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 268r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_268_R_TC_46/full/5810,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 268v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_268_V_TC_46/full/5928,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 269r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_269_R_TC_46/full/5858,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 269v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_269_V_TC_46/full/5920,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 270r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_270_R_TC_46/full/5029,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 270v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_270_V_TC_46/full/5152,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 271r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_271_R_TC_46/full/5450,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 271v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_271_V_TC_46/full/5544,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 272r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_272_R_TC_46/full/5762,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 272v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_272_V_TC_46/full/5944,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 273r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_273_R_TC_46/full/5834,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 273v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_273_V_TC_46/full/5943,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 274r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_274_R_TC_46/full/5858,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 274v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_274_V_TC_46/full/5968,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 275r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_275_R_TC_46/full/5858,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 275v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_275_V_TC_46/full/5976,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 276r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_276_R_TC_46/full/5842,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 276v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_276_V_TC_46/full/5728,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 277r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_277_R_TC_46/full/5874,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 277v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_277_V_TC_46/full/5800,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 278r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_278_R_TC_46/full/4438,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 278v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_278_V_TC_46/full/4431,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 279r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_279_R_TC_46/full/5874,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 279v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_279_V_TC_46/full/5774,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 280r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_280_R_TC_46/full/5842,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 280v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_280_V_TC_46/full/5766,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 281r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_281_R_TC_46/full/5826,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 281v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_281_V_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 282r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_282_R_TC_46/full/5323,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 282v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_282_V_TC_46/full/5048,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 283r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_283_R_TC_46/full/5090,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 283v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_283_V_TC_46/full/5160,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 284r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_284_R_TC_46/full/5674,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 284v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_284_V_TC_46/full/5751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 285r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_285_R_TC_46/full/5698,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 285v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_285_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 286r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_286_R_TC_46/full/5698,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 286v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_286_V_TC_46/full/5887,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 287r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_287_R_TC_46/full/5706,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 287v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_287_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 288r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_288_R_TC_46/full/5754,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 288v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_288_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 289r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_289_R_TC_46/full/5706,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 289v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_289_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 290r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_290_R_TC_46/full/5749,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 290v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_290_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 291r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_291_R_TC_46/full/5802,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 291v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_291_V_TC_46/full/5855,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 292r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_292_R_TC_46/full/5716,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 292v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_292_V_TC_46/full/5879,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 293r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_293_R_TC_46/full/5644,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 293v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_293_V_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 294r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_294_R_TC_46/full/5761,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 294v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_294_V_TC_46/full/5799,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 295r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_295_R_TC_46/full/5850,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 295v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_295_V_TC_46/full/5903,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 296r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_296_R_TC_46/full/5890,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 296v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_296_V_TC_46/full/5903,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 297r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_297_R_TC_46/full/5882,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 297v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_297_V_TC_46/full/5911,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 298r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_298_R_TC_46/full/5898,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 298v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_298_V_TC_46/full/5920,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 299r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_299_R_TC_46/full/4942,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 299v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_299_V_TC_46/full/5047,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 300r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_300_R_TC_46/full/5938,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 300v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_300_V_TC_46/full/6009,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 301r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_301_R_TC_46/full/5874,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 301v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_301_V_TC_46/full/6048,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 302r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_302_R_TC_46/full/5906,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 302v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_302_V_TC_46/full/6000,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 303r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_303_R_TC_46/full/5922,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 303v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_303_V_TC_46/full/5951,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 304r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_304_R_TC_46/full/5898,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 304v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_304_V_TC_46/full/5927,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 305r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_305_R_TC_46/full/5930,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 305v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_305_V_TC_46/full/5984,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 306r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_306_R_TC_46/full/5922,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 306v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_306_V_TC_46/full/5976,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 307r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_307_R_TC_46/full/5738,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 307v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_307_V_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 308r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_308_R_TC_46/full/5970,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 308v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_308_V_TC_46/full/6007,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 309r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_309_R_TC_46/full/5082,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 309v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_309_V_TC_46/full/5087,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 310r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_310_R_TC_46/full/5954,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 310v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_310_V_TC_46/full/6000,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 311r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_311_R_TC_46/full/5066,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 311v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_311_V_TC_46/full/5135,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 312r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_312_R_TC_46/full/5090,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 312v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_312_V_TC_46/full/5095,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 313r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_313_R_TC_46/full/5970,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 313v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_313_V_TC_46/full/5967,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 314r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_314_R_TC_46/full/4930,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 314v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_314_V_TC_46/full/4951,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 315r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_315_R_TC_46/full/5914,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 315v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_315_V_TC_46/full/5943,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 316r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_316_R_TC_46/full/5331,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 316v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_316_V_TC_46/full/5320,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 317r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_317_R_TC_46/full/5922,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 317v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_317_V_TC_46/full/5952,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 318r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_318_R_TC_46/full/4962,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 318v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_318_V_TC_46/full/4967,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 319r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_319_R_TC_46/full/5858,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 319v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_319_V_TC_46/full/5880,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 320r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_320_R_TC_46/full/5802,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 320v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_320_V_TC_46/full/5863,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 321r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_321_R_TC_46/full/5794,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 321v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_321_V_TC_46/full/5887,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 322r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_322_R_TC_46/full/5874,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 322v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_322_V_TC_46/full/5903,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 323r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_323_R_TC_46/full/4932,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 323v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_323_V_TC_46/full/4943,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 324r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_324_R_TC_46/full/5794,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 324v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_324_V_TC_46/full/5824,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 325r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_325_R_TC_46/full/5107,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 325v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_325_V_TC_46/full/5352,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 326r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_326_R_TC_46/full/5794,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 326v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_326_V_TC_46/full/5831,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 327r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_327_R_TC_46/full/5844,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 327v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_327_V_TC_46/full/5871,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 328r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_328_R_TC_46/full/5601,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 328v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_328_V_TC_46/full/5695,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 329r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_329_R_TC_46/full/5644,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 329v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_329_V_TC_46/full/5712,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 330r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_330_R_TC_46/full/5746,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 330v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_330_V_TC_46/full/5839,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 331r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_331_R_TC_46/full/5818,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 331v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_331_V_TC_46/full/5839,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 332r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_332_R_TC_46/full/4946,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 332v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_332_V_TC_46/full/4863,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 333r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_333_R_TC_46/full/4996,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 333v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_333_V_TC_46/full/5127,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 334r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_334_R_TC_46/full/5826,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 334v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_334_V_TC_46/full/5904,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 335r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_335_R_TC_46/full/5882,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 335v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_335_V_TC_46/full/5920,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 336r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_336_R_TC_46/full/5858,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 336v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_336_V_TC_46/full/5920,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 337r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_337_R_TC_46/full/5922,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 337v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_337_V_TC_46/full/5952,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 338r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_338_R_TC_46/full/5096,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 338v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_338_V_TC_46/full/5031,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 339r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_339_R_TC_46/full/5079,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 339v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_339_V_TC_46/full/5119,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 340r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_340_R_TC_46/full/5786,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 340v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_340_V_TC_46/full/5953,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 341r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_341_R_TC_46/full/5615,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 341v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_341_V_TC_46/full/5504,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 342r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_342_R_TC_46/full/5922,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 342v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_342_V_TC_46/full/5902,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 343r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_343_R_TC_46/full/5577,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 343v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_343_V_TC_46/full/5855,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 344r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_344_R_TC_46/full/5633,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 344v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_344_V_TC_46/full/5847,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 345r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_345_R_TC_46/full/5914,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 345v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_345_V_TC_46/full/5935,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 346r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_346_R_TC_46/full/5657,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 346v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_346_V_TC_46/full/5664,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 347r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_347_R_TC_46/full/5850,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 347v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_347_V_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 348r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_348_R_TC_46/full/5624,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 348v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_348_V_TC_46/full/5560,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 349r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_349_R_TC_46/full/5609,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 349v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_349_V_TC_46/full/5608,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 350r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_350_R_TC_46/full/5866,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 350v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_350_V_TC_46/full/5872,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 351r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_351_R_TC_46/full/5850,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 351v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_351_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 352r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_352_R_TC_46/full/5818,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 352v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_352_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 353r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_353_R_TC_46/full/5826,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 353v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_353_V_TC_46/full/5872,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 354r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_354_R_TC_46/full/5794,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 354v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_354_V_TC_46/full/5847,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 355r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_355_R_TC_46/full/4969,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 355v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_355_V_TC_46/full/5055,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 356r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_356_R_TC_46/full/5834,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 356v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_356_V_TC_46/full/5943,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 357r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_357_R_TC_46/full/5842,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 357v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_357_V_TC_46/full/5927,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 358r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_358_R_TC_46/full/5842,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 358v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_358_V_TC_46/full/5840,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 359r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_359_R_TC_46/full/5850,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 359v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_359_V_TC_46/full/5864,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 360r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_360_R_TC_46/full/4650,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 360v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_360_V_TC_46/full/4967,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 361r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_361_R_TC_46/full/5809,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 361v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_361_V_TC_46/full/5872,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 362r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_362_R_TC_46/full/5914,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 362v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_362_V_TC_46/full/5903,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 363r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_363_R_TC_46/full/5854,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 363v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_363_V_TC_46/full/5880,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 364r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_364_R_TC_46/full/5549,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 364v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_364_V_TC_46/full/5471,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 365r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_365_R_TC_46/full/5834,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 365v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_365_V_TC_46/full/5864,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 366r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_366_R_TC_46/full/5842,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 366v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_366_V_TC_46/full/5832,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 367r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_367_R_TC_46/full/5729,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 367v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_367_V_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 368r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_368_R_TC_46/full/5793,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 368v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_368_V_TC_46/full/5761,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 369r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_369_R_TC_46/full/5801,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 369v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_369_V_TC_46/full/5791,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 370r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_370_R_TC_46/full/5784,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 370v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_370_V_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 371r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_371_R_TC_46/full/5713,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 371v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_371_V_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 372r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_372_R_TC_46/full/5705,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 372v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_372_V_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 373r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_373_R_TC_46/full/5754,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 373v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_373_V_TC_46/full/5735,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 374r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_374_R_TC_46/full/5698,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 374v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_374_V_TC_46/full/5665,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 375r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_375_R_TC_46/full/5777,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 375v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_375_V_TC_46/full/5719,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 376r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_376_R_TC_46/full/5688,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 376v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_376_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 377r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_377_R_TC_46/full/5705,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 377v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_377_V_TC_46/full/5751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 378r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_378_R_TC_46/full/5649,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 378v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_378_V_TC_46/full/5759,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 379r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_379_R_TC_46/full/5736,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 379v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_379_V_TC_46/full/5735,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 380r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_380_R_TC_46/full/5761,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 380v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_380_V_TC_46/full/5799,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 381r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_381_R_TC_46/full/5717,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 381v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_381_V_TC_46/full/5696,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 382r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_382_R_TC_46/full/5705,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 382v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_382_V_TC_46/full/5751,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 383r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_383_R_TC_46/full/5799,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 383v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_383_V_TC_46/full/5742,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 384r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_384_R_TC_46/full/5769,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 384v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_384_V_TC_46/full/5831,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 385r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_385_R_TC_46/full/5721,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 385v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_385_V_TC_46/full/5743,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 386r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_386_R_TC_46/full/5735,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 386v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_386_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 387r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_387_R_TC_46/full/5744,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 387v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_387_V_TC_46/full/5824,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 388r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_388_R_TC_46/full/5705,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 388v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_388_V_TC_46/full/5807,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 389r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_389_R_TC_46/full/5793,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 389v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_389_V_TC_46/full/5863,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 390r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_390_R_TC_46/full/5769,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 390v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_390_V_TC_46/full/5816,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 391r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_391_R_TC_46/full/5680,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 391v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_391_V_TC_46/full/5815,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 392r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_392_R_TC_46/full/5729,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 392v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_392_V_TC_46/full/5855,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 393r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_393_R_TC_46/full/5136,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 393v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_393_V_TC_46/full/5183,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 394r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_394_R_TC_46/full/5072,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 394v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_394_V_TC_46/full/5183,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 395r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_395_R_TC_46/full/5705,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 395v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_395_V_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 396r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_396_R_TC_46/full/5721,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 396v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_396_V_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 397r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_397_R_TC_46/full/5689,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 397v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_397_V_TC_46/full/5783,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 398r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_398_R_TC_46/full/5018,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 398v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_398_V_TC_46/full/5767,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 399r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_399_R_TC_46/full/4961,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 399v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_399_V_TC_46/full/5039,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 400r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_400_R_TC_46/full/5657,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 400v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_400_V_TC_46/full/5055,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 401r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_401_R_TC_46/full/5640,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 401v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_401_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 402r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_402_R_TC_46/full/5633,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 402v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_402_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 403r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_403_R_TC_46/full/5673,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 403v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_403_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 404r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_404_R_TC_46/full/5753,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 404v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_404_V_TC_46/full/5752,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 405r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_405_R_TC_46/full/5761,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 405v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_405_V_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 406r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_406_R_TC_46/full/4833,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 406v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_406_V_TC_46/full/4903,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 407r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_407_R_TC_46/full/5488,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 407v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_407_V_TC_46/full/5487,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 408r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_408_R_TC_46/full/5729,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 408v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_408_V_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 409r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_409_R_TC_46/full/5033,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 409v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_409_V_TC_46/full/5023,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 410r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_410_R_TC_46/full/4977,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 410v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_410_V_TC_46/full/5007,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 411r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_411_R_TC_46/full/5681,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 411v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_411_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 412r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_412_R_TC_46/full/5673,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 412v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_412_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 413r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_413_R_TC_46/full/5697,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 413v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_413_V_TC_46/full/5695,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 414r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_414_R_TC_46/full/4979,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 414v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_414_V_TC_46/full/5031,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 415r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_415_R_TC_46/full/5007,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 415v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_415_V_TC_46/full/5015,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 416r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_416_R_TC_46/full/5641,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 416v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_416_V_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 417r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_417_R_TC_46/full/5631,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 417v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_417_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 418r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_418_R_TC_46/full/5671,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 418v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_418_V_TC_46/full/5703,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 419r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_419_R_TC_46/full/5463,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 419v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_419_V_TC_46/full/5479,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 420r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_420_R_TC_46/full/5639,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 420v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_420_V_TC_46/full/5687,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 421r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_421_R_TC_46/full/5648,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 421v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_421_V_TC_46/full/5687,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 422r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_422_R_TC_46/full/5648,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 422v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_422_V_TC_46/full/5679,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 423r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_423_R_TC_46/full/5608,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 423v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_423_V_TC_46/full/5655,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 424r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_424_R_TC_46/full/5616,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 424v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_424_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 425r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_425_R_TC_46/full/5574,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 425v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_425_V_TC_46/full/5615,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 426r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_426_R_TC_46/full/5566,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 426v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_426_V_TC_46/full/5632,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 427r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_427_R_TC_46/full/5616,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 427v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_427_V_TC_46/full/5760,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 428r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_428_R_TC_46/full/5576,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 428v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_428_V_TC_46/full/5712,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 429r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_429_R_TC_46/full/5600,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 429v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_429_V_TC_46/full/5728,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 430r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_430_R_TC_46/full/5615,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 430v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_430_V_TC_46/full/5705,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 431r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_431_R_TC_46/full/5597,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 431v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_431_V_TC_46/full/5736,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 432r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_432_R_TC_46/full/5608,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 432v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_432_V_TC_46/full/5487,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 433r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_433_R_TC_46/full/5438,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 433v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_433_V_TC_46/full/5623,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 434r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_434_R_TC_46/full/5536,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 434v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_434_V_TC_46/full/5591,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 435r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_435_R_TC_46/full/5519,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 435v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_435_V_TC_46/full/5615,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 436r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_436_R_TC_46/full/5486,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 436v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_436_V_TC_46/full/5727,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 437r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_437_R_TC_46/full/5597,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 437v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_437_V_TC_46/full/5607,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 438r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_438_R_TC_46/full/5517,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 438v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_438_V_TC_46/full/5559,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 439r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_439_R_TC_46/full/5484,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 439v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_439_V_TC_46/full/5560,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 440r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_440_R_TC_46/full/5421,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 440v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_440_V_TC_46/full/5559,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 441r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_441_R_TC_46/full/5532,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 441v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_441_V_TC_46/full/5632,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 442r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_442_R_TC_46/full/5541,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 442v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_442_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 443r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_443_R_TC_46/full/5548,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 443v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_443_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 444r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_444_R_TC_46/full/5458,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 444v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_444_V_TC_46/full/5559,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 445r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_445_R_TC_46/full/5516,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 445v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_445_V_TC_46/full/5616,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 446r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_446_R_TC_46/full/5523,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 446v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_446_V_TC_46/full/5583,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 447r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_447_R_TC_46/full/5516,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 447v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_447_V_TC_46/full/5576,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 448r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_448_R_TC_46/full/5420,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 448v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_448_V_TC_46/full/5503,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 449r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_449_R_TC_46/full/5573,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 449v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_449_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 450r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_450_R_TC_46/full/4629,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 450v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_450_V_TC_46/full/4696,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 451r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_451_R_TC_46/full/5533,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 451v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_451_V_TC_46/full/5632,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 452r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_452_R_TC_46/full/5565,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 452v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_452_V_TC_46/full/5647,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 453r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_453_R_TC_46/full/5573,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 453v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_453_V_TC_46/full/5631,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 454r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_454_R_TC_46/full/5573,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 454v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_454_V_TC_46/full/5624,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 455r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_455_R_TC_46/full/5597,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 455v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_455_V_TC_46/full/5615,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 456r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_456_R_TC_46/full/5572,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 456v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_456_V_TC_46/full/5623,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 457r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_457_R_TC_46/full/5573,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 457v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_457_V_TC_46/full/5623,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 458r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_458_R_TC_46/full/5493,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 458v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_458_V_TC_46/full/5513,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 459r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_459_R_TC_46/full/5701,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 459v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_459_V_TC_46/full/5737,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 460r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_460_R_TC_46/full/5701,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 460v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_460_V_TC_46/full/5760,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 461r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_461_R_TC_46/full/5701,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 461v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_461_V_TC_46/full/5775,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 462r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_462_R_TC_46/full/5677,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 462v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_462_V_TC_46/full/5728,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 463r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_463_R_TC_46/full/5556,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 463v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_463_V_TC_46/full/5535,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 464r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_464_R_TC_46/full/5541,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 464v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_464_V_TC_46/full/5360,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 465r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_465_R_TC_46/full/5509,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 465v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_465_V_TC_46/full/5592,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 466r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_466_R_TC_46/full/5534,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 466v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_466_V_TC_46/full/5575,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 467r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_467_R_TC_46/full/5534,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 467v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_467_V_TC_46/full/5575,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 468r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_468_R_TC_46/full/5525,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 468v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_468_V_TC_46/full/5663,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 469r",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_469_R_TC_46/full/5885,/0/default.jpg",
+    },
+    Object {
+      "label": "f. 469v",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_469_V_TC_46/full/5887,/0/default.jpg",
+    },
+    Object {
+      "label": "f. iiir",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_iii_R_TC_46/full/5885,/0/default.jpg",
+    },
+    Object {
+      "label": "f. iiiv",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_iii_V_TC_46/full/5928,/0/default.jpg",
+    },
+    Object {
+      "label": "Back inside binding",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_bib_TC_46/full/6253,/0/default.jpg",
+    },
+    Object {
+      "label": "Back outside binding",
+      "uri": "https://stacks.stanford.edu/image/iiif/ky326yt7099%252F487_bob_TC_46/full/6665,/0/default.jpg",
+    },
+  ],
+  "mimes": Array [
+    "image/png",
+    "image/jpg",
+  ],
+  "progress": Object {},
+}
+`;
+
+exports[`<CollectionCreate> getImagesFromUri retrieves images from an info JSON 1`] = `
+Object {
+  "images": Array [
+    Object {
+      "label": "image1",
+      "selected": false,
+      "uri": "http://localhost:8182/iiif/2/image1.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image2",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image2.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image.jpg",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image.jpg/full/max/0/default.jpg",
+    },
+  ],
+  "mimes": Array [
+    "image/png",
+    "image/jpg",
+  ],
+  "progress": Object {},
+}
+`;
+
+exports[`<CollectionCreate> getProgressBars retrieves a list of progress bars 1`] = `
+Array [
+  <progress
+    className="upload-progress"
+    max={100}
+    value={50}
+  />,
+]
+`;
+
+exports[`<CollectionCreate> getSelectedImages retrieves selected images from state 1`] = `
+Array [
+  Object {
+    "label": "image2",
+    "selected": true,
+    "uri": "http://localhost:8182/iiif/2/image2.jpg/full/500,/10/default.jpg",
+  },
+]
+`;
+
+exports[`<CollectionCreate> handleDropAccepted uploads images and return IIIF URIs 1`] = `
+Object {
+  "images": Array [
+    Object {
+      "label": "image1",
+      "selected": false,
+      "uri": "http://localhost:8182/iiif/2/image1.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image2",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image2.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image.png",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image.png/full/max/0/default.jpg",
+    },
+  ],
+  "mimes": Array [
+    "image/png",
+    "image/jpg",
+  ],
+  "progress": Object {},
+}
+`;
+
+exports[`<CollectionCreate> handleDropRejected handles lists of IIIF URIs 1`] = `
+Object {
+  "images": Array [
+    Object {
+      "label": "image1",
+      "selected": false,
+      "uri": "http://localhost:8182/iiif/2/image1.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image2",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image2.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image.jpg",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image.jpg/full/max/0/default.jpg",
+    },
+  ],
+  "mimes": Array [
+    "image/png",
+    "image/jpg",
+  ],
+  "progress": Object {},
+}
+`;
+
+exports[`<CollectionCreate> handleProgressEvent removes progress when done 1`] = `"{\\"1524252836\\":{\\"loaded\\":50,\\"total\\":100}}"`;
+
+exports[`<CollectionCreate> handleProgressEvent removes progress when done 2`] = `"{}"`;
+
+exports[`<CollectionCreate> handleProgressEvent updates upload progress 1`] = `
+Object {
+  "images": Array [
+    Object {
+      "label": "image1",
+      "selected": false,
+      "uri": "http://localhost:8182/iiif/2/image1.jpg/full/500,/10/default.jpg",
+    },
+    Object {
+      "label": "image2",
+      "selected": true,
+      "uri": "http://localhost:8182/iiif/2/image2.jpg/full/500,/10/default.jpg",
+    },
+  ],
+  "mimes": Array [
+    "image/png",
+    "image/jpg",
+  ],
+  "progress": Object {
+    "1524252836": Object {
+      "loaded": 50,
+      "total": 100,
+    },
+  },
+}
+`;
+
+exports[`<CollectionCreate> renders as expected 1`] = `
+<div>
+  <p>
+    Drop your files or click
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      here
+    </button>
+    to upload
+  </p>
+  <t
+    accept="image/png,image/jpg,application/json,text/plain,text/uri-list"
+    className="dropzone"
+    disableClick={true}
+    disablePreview={true}
+    disabled={false}
+    maxSize={Infinity}
+    minSize={0}
+    multiple={true}
+    onDropAccepted={[Function]}
+    onDropRejected={[Function]}
+    preventDropOnDocument={true}
+  >
+    <Gallery
+      backdropClosesModal={false}
+      className="gallery"
+      currentImage={0}
+      enableImageSelection={true}
+      enableKeyboardInput={true}
+      enableLightbox={false}
+      id="ReactGridGallery"
+      imageCountSeparator=" of "
+      images={Array []}
+      isOpen={false}
+      lightboxWidth={1024}
+      margin={2}
+      onClickThumbnail={[Function]}
+      onSelectImage={[Function]}
+      preloadNextImage={true}
+      rowHeight={180}
+      showCloseButton={true}
+      showImageCount={true}
+      showLightboxThumbnails={false}
+    />
+  </t>
+  <input
+    id="id"
+    name="images"
+    type="hidden"
+    value="[]"
+  />
+</div>
+`;
+
+exports[`<CollectionCreate> renders as expected with images 1`] = `
+<div>
+  <p>
+    Drop your files or click
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+    >
+      here
+    </button>
+    to upload
+  </p>
+  <t
+    accept="image/png,image/jpg,application/json,text/plain,text/uri-list"
+    className="dropzone"
+    disableClick={true}
+    disablePreview={true}
+    disabled={false}
+    maxSize={Infinity}
+    minSize={0}
+    multiple={true}
+    onDropAccepted={[Function]}
+    onDropRejected={[Function]}
+    preventDropOnDocument={true}
+  >
+    <Gallery
+      backdropClosesModal={false}
+      className="gallery"
+      currentImage={0}
+      enableImageSelection={true}
+      enableKeyboardInput={true}
+      enableLightbox={false}
+      id="ReactGridGallery"
+      imageCountSeparator=" of "
+      images={
+        Array [
+          Object {
+            "caption": "image1",
+            "isSelected": true,
+            "src": "http://localhost:8182/iiif/2/image1.jpg/square/300,/0/default.jpg",
+            "thumbnail": "http://localhost:8182/iiif/2/image1.jpg/square/300,/0/default.jpg",
+            "thumbnailCaption": "image1",
+            "thumbnailHeight": 300,
+            "thumbnailWidth": 300,
+          },
+          Object {
+            "caption": "image2",
+            "isSelected": false,
+            "src": "http://localhost:8182/iiif/2/image2.jpg/square/300,/0/default.jpg",
+            "thumbnail": "http://localhost:8182/iiif/2/image2.jpg/square/300,/0/default.jpg",
+            "thumbnailCaption": "image2",
+            "thumbnailHeight": 300,
+            "thumbnailWidth": 300,
+          },
+        ]
+      }
+      isOpen={false}
+      lightboxWidth={1024}
+      margin={2}
+      onClickThumbnail={[Function]}
+      onSelectImage={[Function]}
+      preloadNextImage={true}
+      rowHeight={180}
+      showCloseButton={true}
+      showImageCount={true}
+      showLightboxThumbnails={false}
+    />
+  </t>
+  <input
+    id="id"
+    name="images"
+    type="hidden"
+    value="[{\\"uri\\":\\"http://localhost:8182/iiif/2/image1.jpg/full/500,/10/default.jpg\\",\\"label\\":\\"image1\\",\\"selected\\":true}]"
+  />
+</div>
+`;

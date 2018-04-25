@@ -84,3 +84,12 @@ services:
       - ./.envs/.local/.postgres
     ports: []
     command: /start-celerybeat.sh
+
+  flower:
+    build:
+      context: .
+      dockerfile: ./compose/local/flower/Dockerfile
+    env_file:
+      - ./.envs/.local/.celery
+    ports:
+      - "49555:5555"

@@ -1,3 +1,4 @@
 # General
 # ------------------------------------------------------------------------------
 USE_DOCKER=yes
+CANTALOUPE_SERVER=http://localhost:8182

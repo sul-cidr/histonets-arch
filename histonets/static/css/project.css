@@ -11,3 +11,66 @@
   background-color: #f2dede;
   border-color: #eed3d7;
 }
+
+.bg-stanford {
+  background-color: #8c1515 !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #f2f2f2 !important;
+}
+
+.navbar .nav-link {
+  color: #f2f2f2 !important;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.container-fluid {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.collection-item {
+  padding: 10px 5px;
+}
+
+.collection-item:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0.67em 0;
+}
+
+.upload-progress {
+  vertical-align: baseline;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  top: 14px;
+  position: relative;
+}
+
+.dropzone {
+  min-height: 150px;
+  width: 100%;
+  background: rgb(238, 238, 238);
+}
+
+.ReactGridGallery {
+  /*display: inline-flex !important;*/
+}
+
+.ReactGridGallery .tile {
+  display: inline-flex !important;
+  float: none !important;
+  display: flow-root !important;
+}

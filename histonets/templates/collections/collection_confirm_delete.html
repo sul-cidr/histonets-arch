@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static i18n compress%}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+  <h2>Delete collection</h2>
+  <form action="" method="post">{% csrf_token %}
+      <p>Are you sure you want to delete "{{ object }}"?</p>
+      <p>Uploaded images will not be deleted from the IIIF server</p>
+      <input type="submit" value="Confirm" />
+  </form>
+{% endblock content %}
