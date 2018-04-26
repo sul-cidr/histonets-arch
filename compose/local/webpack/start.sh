@@ -7,4 +7,10 @@ set -o xtrace
 
 cd /app
 yarn install
-yarn dev
+cmd="$@"
+
+if [ ! "$cmd" ]; then
+    yarn dev
+else
+    exec $cmd
+fi

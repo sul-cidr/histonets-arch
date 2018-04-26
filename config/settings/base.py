@@ -174,7 +174,7 @@ MEDIA_URL = '/media/'
 # IIIF
 # ------------------------------------------------------------------------------
 IIIF_DIR = 'iiif'  # Relative to the default storage, e.g., /media/iiif
-IIIF_CANONICAL_URI = "{}/iiif/2/{{}}/full/max/0/default.jpg".format(env('CANTALOUPE_SERVER'))
+IIIF_CANONICAL_URI = "{}/iiif/2/{{}}/full/max/0/default.jpg".format(env('CANTALOUPE_SERVER', default='http://localhost'))
 IIIF_IMAGE_FORMATS = ["jpg", "jpeg", "tif", "tiff", "gif", "png"]
 
 # TEMPLATES
