@@ -1,0 +1,43 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~
+    docker:
+      - image: circleci/python:3.6.5-jessie-node
+        environment:
+          DATABASE_URL: postgresql://root@localhost/test?sslmode=disable
+      - image: circleci/postgres:10-alpine-ram
+        environment:
+          POSTGRES_USER: root
+          POSTGRES_DB: test
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "requirements/local.txt" }}
+          - v1-dependencies-
+      - run:
+          name: Install dependencies
+          command: |
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install -r requirements/local.txt
+            yarn install
+      - save_cache:
+          paths:
+            - ./venv
+          key: v1-dependencies-{{ checksum "requirements/local.txt" }}
+      - run:
+          name: Run python tests
+          command: |
+            . venv/bin/activate
+            python manage.py test
+      - run:
+          name: Run javascript tests
+          command: |
+            yarn test
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: test-reports
+          destination: test-reports

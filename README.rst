@@ -6,7 +6,8 @@ From scanned map images to graph data
 .. image:: https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
-
+.. image:: https://circleci.com/gh/sul-cidr/histonets-arch.svg?style=svg
+    :target: https://circleci.com/gh/sul-cidr/histonets-arch
 
 :License: MIT
 
