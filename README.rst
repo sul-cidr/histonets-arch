@@ -80,6 +80,10 @@ To run a celery worker:
 
 Please note: For Celery's import magic to work, it is important *where* the celery commands are run. If you are in the same folder with *manage.py*, you should be right.
 
+If using Docker, a `Flower`_ image is included listening on port 5555.
+
+.. _flower: https://flower.readthedocs.io/en/latest/
+
 
 Email Server
 ^^^^^^^^^^^^

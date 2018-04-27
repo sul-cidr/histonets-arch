@@ -86,10 +86,13 @@ services:
     command: /start-celerybeat.sh
 
   flower:
-    build:
-      context: .
-      dockerfile: ./compose/local/flower/Dockerfile
+    <<: *django
+    depends_on:
+      - redis
+      - postgres
     env_file:
       - ./.envs/.local/.celery
+      - ./.envs/.local/.postgres
     ports:
-      - "49555:5555"
+      - "5555:5555"
+    command: /start-flower.sh
