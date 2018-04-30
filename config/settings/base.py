@@ -69,6 +69,14 @@ THIRD_PARTY_APPS = [
     'allauth.socialaccount',
 
     'webpack_loader',
+
+    'health_check',
+    'health_check.db',
+    # 'health_check.cache',
+    # 'health_check.storage',
+    # 'health_check.contrib.celery',              # requires celery
+    # 'health_check.contrib.psutil',              # disk and memory utilization; requires psutil
+    # 'health_check.contrib.s3boto_storage',      # requires boto and S3BotoStorage backend
 ]
 LOCAL_APPS = [
     'histonets.users.apps.UsersConfig',

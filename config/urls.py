@@ -17,6 +17,8 @@ urlpatterns = [
     url(r'^users/', include('histonets.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
+    url(r'^status/', include('health_check.urls')),
+
     path('collections/', include('histonets.collections.urls')),
 
 
