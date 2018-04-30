@@ -1,6 +1,7 @@
 # Celery
 # ------------------------------------------------------------------------------
 CELERY_BROKER_URL=redis://redis:6379/0
+CELERY_WORKER_OPTIONS=-Ofair
 POSTGRES_USER=EGXfeCxBUhDOoeEPkHlbfOIfcexAXykZ
 CANTALOUPE_SERVER=http://localhost:8182
 

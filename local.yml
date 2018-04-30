@@ -20,6 +20,7 @@ services:
       - ./.envs/.local/.celery
     ports:
       - "8000:8000"
+    restart: on-failure:5
     command: /start.sh
 
   webpack:
@@ -32,6 +33,7 @@ services:
       - ./.envs/.local/.webpack
     ports:
       - "8080:8080"
+    restart: on-failure:5
     command: /start-webpack.sh
 
   postgres:
@@ -71,25 +73,17 @@ services:
       - ./.envs/.local/.celery
       - ./.envs/.local/.postgres
     ports: []
+    restart: on-failure:5
     command: /start-celeryworker.sh
 
-  celerybeat:
+  flower:
     <<: *django
     depends_on:
       - redis
       - postgres
-      - mailhog
     env_file:
       - ./.envs/.local/.celery
       - ./.envs/.local/.postgres
-    ports: []
-    command: /start-celerybeat.sh
-
-  flower:
-    build:
-      context: .
-      dockerfile: ./compose/local/flower/Dockerfile
-    env_file:
-      - ./.envs/.local/.celery
     ports:
-      - "49555:5555"
+      - "5555:5555"
+    command: /start-flower.sh
