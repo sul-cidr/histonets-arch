@@ -4,6 +4,16 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+if [ -z "${POSTGRES_USER:-}" ]; then
+    # the official postgres image uses 'postgres' as default user if not set explictly.
+    export POSTGRES_USER=postgres
+fi
+if [ -z "${POSTGRES_HOST:-}" ]; then
+    export POSTGRES_HOST=postgres
+fi
+if [ -z "${POSTGRES_PORT:-}" ]; then
+    export POSTGRES_PORT=5432
+fi
 
 # we might run into trouble when using the default `postgres` user, e.g. when dropping the postgres
 # database in restore.sh. Check that something else is used here
