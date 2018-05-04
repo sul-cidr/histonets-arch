@@ -1,4 +1,4 @@
-{% load static i18n compress%}
+{% load static i18n compress socialaccount %}
 {% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
 <html lang="en">
@@ -69,6 +69,10 @@
               <li class="nav-item">
                 {# URL provided by django-allauth/account/urls.py #}
                 <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
+              </li>
+              <li class="nav-item">
+                {# URL provided by django-allauth/account/urls.py #}
+                <a id="su-in-link" class="nav-link" href="javascript:alert('In the next screen, click on \'Use Single Sign On (SSO)\' and enter your SUNetID');location.href='{% provider_login_url "box" process="login" %}'">{% trans "SUNetID (via Box)" %}</a>
               </li>
             {% endif %}
           </ul>
