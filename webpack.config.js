@@ -1,55 +1,32 @@
-const path = require("path");
+const path = require('path');
 const webpack = require('webpack');
 const BundleTracker = require('webpack-bundle-tracker');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const devServer = {
-  hot: true,
-  inline: true,
-  historyApiFallback: true,
-  publicPath: "/assets/bundles/",
-  host: "0.0.0.0",
-  port: 8080,
-  clientLogLevel: 'error',
-  headers: { 'Access-Control-Allow-Origin': '*' },
-  watchOptions: {
-    ignored: /node_modules/,
-    aggregateTimeout: 300,
-    poll: 100
-  }
-};
-
-module.exports = {
-  devtool: 'source-map',
-  mode: process.env.WEBPACK_MODE || 'development',
+const config = {
+  mode: 'production',
   context: __dirname,
   entry: {
     'home': [
-      'babel-polyfill',
-      'react-hot-loader/patch',
       './assets/home'
     ],
     'collections.create': [
-      'babel-polyfill',
-      'react-hot-loader/patch',
       './assets/collections.create'
     ]
   },
-  devServer,
   output: {
       path: path.resolve('./assets/bundles/'),
-      filename: "[name]-[hash].js",
-      publicPath: `http://${devServer.host}:${devServer.port}${devServer.publicPath}`
+      filename: '[name]-[hash].js',
+      publicPath: '/static/bundles/'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
     new BundleTracker({filename: './webpack-stats.json'}),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "[name].css",
-      chunkFilename: "[id].css"
+      filename: '[name].css',
+      chunkFilename: '[id].css'
     })
   ],
   module: {
@@ -63,14 +40,14 @@ module.exports = {
         test: /\.scss/,
         use: [
           // MiniCssExtractPlugin.loader,
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               module: true
             }
           },
-          "fast-sass-loader"
+          'fast-sass-loader'
         ]
       },
     ]
@@ -80,3 +57,29 @@ module.exports = {
     extensions: ['.js', '.jsx', '.css', '.scss']
   }
 };
+console.log(process.env.WEBPACK_MODE)
+if (process.env.WEBPACK_MODE !== 'production') {
+  console.log("HERE")
+  config.devtool = 'source-map';
+  config.mode = 'development';
+  config.devServer = {
+    hot: true,
+    inline: true,
+    historyApiFallback: true,
+    publicPath: '/assets/bundles/',
+    host: '0.0.0.0',
+    port: 8080,
+    clientLogLevel: 'error',
+    headers: { 'Access-Control-Allow-Origin': '*' },
+    watchOptions: {
+      ignored: /node_modules/,
+      aggregateTimeout: 300,
+      poll: 100
+    }
+  }
+  config.output.publicPath = `http://${config.devServer.host}:${config.devServer.port}${config.devServer.publicPath}`
+  config.plugins.splice(0, 0, new webpack.HotModuleReplacementPlugin());
+  Object.entries(config.entry).map(([, entries]) => entries.splice(0, 0, 'babel-polyfill', 'react-hot-loader/patch'));
+}
+
+module.exports = config;
