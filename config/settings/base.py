@@ -81,7 +81,7 @@ THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
     'histonets.users.apps.UsersConfig',
-    # Your stuff: custom apps go here
+    'histonets.apps.HistonetsConfig',
     'histonets.collections.apps.CollectionsConfig',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
