@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  run_tests:
     working_directory: ~
     docker:
       - image: circleci/python:3.6.5-jessie-node
@@ -41,3 +41,90 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+
+  register_image:
+    docker:
+      - image: circleci/python:3.6.5-jessie-node
+        environment:
+          WEBPACK_MODE: production
+    working_directory: ~
+    steps:
+      - setup_remote_docker
+      - checkout
+      - run:
+          name: Install & Build Yarn
+          command: |
+            yarn install
+            yarn build
+      - run:
+          name: Build Image & Register Task
+          command: |
+            docker build -t cidr/histonets_django:latest -f compose/production/django/Dockerfile .
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker push cidr/histonets_django:latest
+
+  deploy_to_dev:
+    docker:
+      - image: circleci/python:3.6.5-jessie-node
+    working_directory: ~
+    steps:
+      - run:
+          name: Install AWS CLI
+          command: |
+            sudo apt-get install -y python-pip libyaml-dev python-dev jq
+            sudo pip install awscli
+      - checkout
+      - run:
+          name: Configure AWS CLI (dev)
+          command: |
+            aws configure set aws_access_key_id $DEV_AWS_KEY
+            aws configure set aws_secret_access_key $DEV_AWS_SECRET
+            aws configure set region us-west-2
+            aws configure set default.output json
+            aws configure list  # Get confirmation it worked in your logs
+      - run:
+          name: DB Migrate & Update Service (dev)
+          command: |
+            task_arn=$(aws ecs list-task-definitions --family-prefix histonets --sort DESC --max-items 1 | jq --raw-output --exit-status '.taskDefinitionArns[]')
+            cluster_arn=$(aws ecs list-clusters | jq --raw-output --exit-status '.clusterArns[] | select(contains("cidr"))')
+            vpc_id=$(aws ec2 describe-vpcs --filters "Name=tag:Environment,Values=dev" | jq --raw-output --exit-status '.Vpcs[].VpcId')
+            subnet_id=$(aws ec2 describe-subnets --filters "Name=vpc-id,Values=$vpc_id" "Name=tag:Name,Values=dev-private-us-west-2a" | jq --raw-output --exit-status '.Subnets[].SubnetId')
+            group_id=$(aws ec2 describe-security-groups --filters "Name=vpc-id,Values=$vpc_id" "Name=group-name,Values=histonets-dev-ecs-service-sg" | jq --raw-output --exit-status '.SecurityGroups[].GroupId')
+            aws ecs run-task --overrides '{ "containerOverrides": [{ "name": "histonets", "command": [ "python", "manage.py", "migrate" ]}]}' --task-definition "$task_arn" --cluster "$cluster_arn" --network-configuration '{ "awsvpcConfiguration": { "subnets": [ "'"$subnet_id"'" ], "securityGroups": [ "'"$group_id"'" ], "assignPublicIp": "DISABLED" }}' --launch-type FARGATE
+            aws ecs update-service --cluster "$cluster_arn" --service histonets --task-definition "$task_arn"
+
+workflows:
+  version: 2
+  run_tests:
+    jobs:
+      - run_tests:
+          filters:
+            branches:
+              ignore:
+                - devel
+                - master
+
+  deploy_devel_to_dev:
+    jobs:
+      - run_tests:
+          filters:
+            branches:
+              only: devel
+            tags:
+              ignore: /.*/
+      - register_image:
+          requires:
+            - run_tests
+          filters:
+            branches:
+              only: devel
+            tags:
+              ignore: /.*/
+      - deploy_to_dev:
+          requires:
+            - register_image
+          filters:
+            branches:
+              only: devel
+            tags:
+              ignore: /.*/
