@@ -4,12 +4,20 @@ FROM mostalive/ubuntu-14.04-oracle-jdk8
 # https://github.com/pulibrary/cantaloupe-docker
 # https://github.com/kaij/cantaloupe
 # https://github.com/MITLibraries/docker-cantaloupe
-
-ENV CANTALOUPE_VERSION 3.4.1
+ARG CANTALOUPE_BRANCH=no
+ARG CANTALOUPE_VERSION=3.4.1
+ARG ADMIN_ENABLED=true
+ARG ADMIN_PASSWORD=docker
+ARG SOURCE_STATIC=S3Source
+# In old versions the setting is called resolver
+ARG RESOLVER_STATIC=AmazonS3Resolver
+ARG AWS_ENDPOINT=s3.us-west-2.amazonaws.com
+ARG AWS_BUCKET_NAME=histonets-dev/iiif
+ARG AWS_BUCKET_REGION=us-west-2
 EXPOSE 8182
 
 # Update packages and install tools
-RUN apt-get update -y && apt-get install -y wget unzip graphicsmagick curl build-essential cmake
+RUN apt-get update -y && apt-get install -y wget rpl unzip graphicsmagick curl build-essential cmake
 
 #Build OpenJPEG
 RUN wget -c https://github.com/uclouvain/openjpeg/archive/v2.1.2.tar.gz -O openjpeg-2.1.2.tar.gz \
@@ -28,15 +36,36 @@ RUN adduser --system cantaloupe
 # Cantaloupe
 #
 WORKDIR /tmp
-RUN curl -OL https://github.com/medusa-project/cantaloupe/releases/download/v$CANTALOUPE_VERSION/Cantaloupe-$CANTALOUPE_VERSION.zip \
- && mkdir -p /usr/local/ \
- && cd /usr/local \
- && unzip /tmp/Cantaloupe-$CANTALOUPE_VERSION.zip \
+RUN echo "Using version '$CANTALOUPE_VERSION'"
+RUN if [ "$CANTALOUPE_BRANCH" = "yes" ] ; then \
+  apt-get install -y maven \
+  && curl -o Cantaloupe-$CANTALOUPE_VERSION.zip -L https://github.com/medusa-project/cantaloupe/archive/$CANTALOUPE_VERSION.zip \
+  && mkdir -p /usr/local/ \
+  && cd /usr/local \
+  && unzip /tmp/Cantaloupe-$CANTALOUPE_VERSION.zip \
+  && mv cantaloupe-$CANTALOUPE_VERSION Cantaloupe-$CANTALOUPE_VERSION \
+  && cd /usr/local/Cantaloupe-$CANTALOUPE_VERSION \
+  && mvn clean package -DskipTests \
+  && cp target/cantaloupe-*.war Cantaloupe-$CANTALOUPE_VERSION.war \
+ ; else \
+  curl -OL https://github.com/medusa-project/cantaloupe/releases/download/v$CANTALOUPE_VERSION/Cantaloupe-$CANTALOUPE_VERSION.zip \
+  && mkdir -p /usr/local/ \
+  && cd /usr/local \
+  && unzip /tmp/Cantaloupe-$CANTALOUPE_VERSION.zip \
+ ; fi
+RUN cd /usr/local \
  && ln -s Cantaloupe-$CANTALOUPE_VERSION cantaloupe \
  && rm -rf /tmp/Cantaloupe-$CANTALOUPE_VERSION \
  && rm /tmp/Cantaloupe-$CANTALOUPE_VERSION.zip
 
 COPY ./compose/production/cantaloupe/cantaloupe.properties /etc/cantaloupe.properties
+RUN rpl '$ADMIN_ENABLED' "$ADMIN_ENABLED" /etc/cantaloupe.properties \
+ && rpl '$ADMIN_PASSWORD' "$ADMIN_PASSWORD" /etc/cantaloupe.properties \
+ && rpl '$RESOLVER_STATIC' "$RESOLVER_STATIC" /etc/cantaloupe.properties \
+ && rpl '$SOURCE_STATIC' "$SOURCE_STATIC" /etc/cantaloupe.properties \
+ && rpl '$AWS_BUCKET_NAME' "$AWS_BUCKET_NAME" /etc/cantaloupe.properties \
+ && rpl '$AWS_ENDPOINT' "$AWS_ENDPOINT" /etc/cantaloupe.properties \
+ && rpl '$AWS_BUCKET_REGION' "$AWS_BUCKET_REGION" /etc/cantaloupe.properties
 
 RUN mkdir -p /var/log/cantaloupe \
  && mkdir -p /var/cache/cantaloupe \
@@ -45,4 +74,4 @@ RUN mkdir -p /var/log/cantaloupe \
  && chown cantaloupe /etc/cantaloupe.properties
 
 USER cantaloupe
-CMD ["sh", "-c", "java -Dcantaloupe.config=/etc/cantaloupe.properties -Xmx2g -jar /usr/local/cantaloupe/Cantaloupe-$CANTALOUPE_VERSION.war"]
+CMD ["sh", "-c", "java -Dcantaloupe.config=/etc/cantaloupe.properties -Xmx2g -jar $(ls /usr/local/cantaloupe/*.war)"]
