@@ -1,4 +1,6 @@
 # General
 # ------------------------------------------------------------------------------
 USE_DOCKER=yes
+DJANGO_SETTINGS_MODULE=config.settings.local
 CANTALOUPE_SERVER=http://localhost:8182
+CANTALOUPE_CONTAINER_SERVER=http://cantaloupe:8182

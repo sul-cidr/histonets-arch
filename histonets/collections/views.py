@@ -10,9 +10,9 @@ from django.urls import reverse, reverse_lazy
 from django.views.decorators.csrf import ensure_csrf_cookie
 from django.views.generic.edit import DeleteView, UpdateView
 
-from histonets import iiif
 from .forms import CollectionForm
 from .models import Collection
+from ..iiif import save_uploaded_file
 from ..utils import to_react_props
 
 
@@ -64,9 +64,12 @@ def upload(request):
         for file in files:
             file_format = imghdr.what(file='', h=file.read())
             if file_format in settings.IIIF_IMAGE_FORMATS:
+                iiif_uri_name = save_uploaded_file(request.user.username, file)
+                iiif_uri = settings.IIIF_CANONICAL_URI.format(iiif_uri_name)
                 files_info.append({
                     'status': 'ok',
-                    'uri': iiif.handle_uploaded_file(request.user, file),
+                    'name': iiif_uri_name,
+                    'uri': iiif_uri,
                     'label': file.name
                 })
             else:

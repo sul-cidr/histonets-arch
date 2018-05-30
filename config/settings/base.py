@@ -183,9 +183,14 @@ MEDIA_URL = '/media/'
 # IIIF
 # ------------------------------------------------------------------------------
 IIIF_DIR = 'iiif'  # Relative to the default storage, e.g., /media/iiif
-IIIF_CANONICAL_URI = "{}/iiif/2/{{}}/full/max/0/default.jpg".format(env('CANTALOUPE_SERVER', default='http://localhost'))
+IIIF_CANONICAL_URI_PATTERN = "{}/iiif/2/{{}}/full/max/0/default.jpg"
+IIIF_CANONICAL_URI = IIIF_CANONICAL_URI_PATTERN.format(env('CANTALOUPE_SERVER', default='http://localhost'))
+IIIF_CANONICAL_CONTAINER_URI = None
+if env('CANTALOUPE_CONTAINER_SERVER', default=False):
+    IIIF_CANONICAL_CONTAINER_URI = IIIF_CANONICAL_URI_PATTERN.format(
+        env('CANTALOUPE_CONTAINER_SERVER', default='http://localhost')
+    )
 IIIF_IMAGE_FORMATS = ["jpg", "jpeg", "tif", "tiff", "gif", "png"]
-
 # TEMPLATES
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#templates
@@ -262,6 +267,11 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_serializer
 CELERY_RESULT_SERIALIZER = 'json'
+
+CELERY_ALWAYS_EAGER = False  # set to True for emulation
+CELERYD_TASK_TERMINATES_WORKER = True  # custom option
+CELERYD_MAX_TASKS_PER_CHILD = 1
+
 # django-allauth
 # ------------------------------------------------------------------------------
 # https://django-allauth.readthedocs.io/en/latest/configuration.html

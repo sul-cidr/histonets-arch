@@ -10,7 +10,7 @@ class CollectionForm(forms.ModelForm):
 
     class Meta:
         model = Collection
-        fields = ['label']
+        fields = ['label', 'description']
 
     def clean_images(self):
         try:
@@ -21,5 +21,6 @@ class CollectionForm(forms.ModelForm):
     def save(self, commit=True):
         super().save(commit=commit)
         for image in self.cleaned_data['images']:
-            self.instance.images.create(label=image['label'], uri=image['uri'])
+            self.instance.images.create(label=image['label'], uri=image['uri'],
+                                        name=image.get('name'))
         return self.instance

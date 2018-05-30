@@ -103,7 +103,7 @@ TEMPLATES[0]['OPTIONS']['loaders'] = [  # noqa F405
 # https://docs.djangoproject.com/en/dev/ref/settings/#default-from-email
 DEFAULT_FROM_EMAIL = env(
     'DJANGO_DEFAULT_FROM_EMAIL',
-    default='Histonets <noreply@histonets.stanford.edu>'
+    default='Histonets <noreply@histonets.cidr.stanford.edu>'
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#server-email
 SERVER_EMAIL = env('DJANGO_SERVER_EMAIL', default=DEFAULT_FROM_EMAIL)
@@ -188,5 +188,24 @@ LOGGING = {
     }
 }
 
-# Your stuff...
+# Celery
 # ------------------------------------------------------------------------------
+# http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-task_always_eager
+CELERY_ALWAYS_EAGER = False  # set to True for emulation
+CELERYD_TASK_TERMINATES_WORKER = True  # custom option
+CELERYD_MAX_TASKS_PER_CHILD = 1
+CELERYD_ENVIRONMENT_OPTIONS = {
+    'AWS': {
+        'TASK_DEFINITION_FAMILY_PREFIX': env('AWS_SERVICE_NAME'),
+        'CLUSTER_ARN_CONTAINS': env('AWS_CLUSTER_ARN_CONTAINS'),
+        'VPC_TAG_ENVIRONMENT': env('AWS_VPC_TAG_ENVIRONMENT').split(),
+        'SUBNET_TAG_NAME': env('AWS_SUBNET_TAG_NAME').split(),
+        'SECURITY_GROUP_NAME': env('AWS_SECURITY_GROUP_NAME').split(),
+        'SERVICE_NAME': env('AWS_SERVICE_NAME'),
+        'CONTAINER_NAME': env('AWS_SERVICE_NAME'),
+        'CONTAINER_CPU': env.int('AWS_CONTAINER_CPU', default=256),
+        'CONTAINER_MEMORY': env.int('AWS_CONTAINER_MEMORY', default=1024),
+        'CONTAINER_LAUNCH_TYPE': env('AWS_CONTAINER_LAUNCH_TYPE', default='FARGATE').upper(),
+        'CONTAINER_COMMAND': env('AWS_CONTAINER_COMMAND', default='./start-worker.sh').split(),
+    }
+}
