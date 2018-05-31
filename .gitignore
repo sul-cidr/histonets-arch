@@ -285,7 +285,6 @@ pip-selfcheck.json
 
 # Histonets
 media/
-compose/production/cantaloupe/cantaloupe.properties
 webpack-stats.json
 
 # Added to maintain local compose files which are ignored by something above.
