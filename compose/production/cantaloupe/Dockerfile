@@ -4,16 +4,17 @@ FROM mostalive/ubuntu-14.04-oracle-jdk8
 # https://github.com/pulibrary/cantaloupe-docker
 # https://github.com/kaij/cantaloupe
 # https://github.com/MITLibraries/docker-cantaloupe
-ARG CANTALOUPE_BRANCH=no
+ARG CANTALOUPE_BRANCH=false
 ARG CANTALOUPE_VERSION=3.4.1
+ARG BASE_URI=
 ARG ADMIN_ENABLED=true
 ARG ADMIN_PASSWORD=docker
 ARG SOURCE_STATIC=S3Source
 # In old versions the setting is called resolver
 ARG RESOLVER_STATIC=AmazonS3Resolver
-ARG AWS_ENDPOINT=s3.us-west-2.amazonaws.com
-ARG AWS_BUCKET_NAME=histonets-dev/iiif
-ARG AWS_BUCKET_REGION=us-west-2
+ARG AWS_ENDPOINT=
+ARG AWS_BUCKET_NAME=
+ARG AWS_BUCKET_REGION=
 EXPOSE 8182
 
 # Update packages and install tools
@@ -37,7 +38,7 @@ RUN adduser --system cantaloupe
 #
 WORKDIR /tmp
 RUN echo "Using version '$CANTALOUPE_VERSION'"
-RUN if [ "$CANTALOUPE_BRANCH" = "yes" ] ; then \
+RUN if [ "$CANTALOUPE_BRANCH" = "true" ] ; then \
   apt-get install -y maven \
   && curl -o Cantaloupe-$CANTALOUPE_VERSION.zip -L https://github.com/medusa-project/cantaloupe/archive/$CANTALOUPE_VERSION.zip \
   && mkdir -p /usr/local/ \
@@ -59,7 +60,8 @@ RUN cd /usr/local \
  && rm /tmp/Cantaloupe-$CANTALOUPE_VERSION.zip
 
 COPY ./compose/production/cantaloupe/cantaloupe.properties /etc/cantaloupe.properties
-RUN rpl '$ADMIN_ENABLED' "$ADMIN_ENABLED" /etc/cantaloupe.properties \
+RUN rpl '$BASE_URI' "$BASE_URI" /etc/cantaloupe.properties \
+ && rpl '$ADMIN_ENABLED' "$ADMIN_ENABLED" /etc/cantaloupe.properties \
  && rpl '$ADMIN_PASSWORD' "$ADMIN_PASSWORD" /etc/cantaloupe.properties \
  && rpl '$RESOLVER_STATIC' "$RESOLVER_STATIC" /etc/cantaloupe.properties \
  && rpl '$SOURCE_STATIC' "$SOURCE_STATIC" /etc/cantaloupe.properties \

@@ -42,6 +42,20 @@ jobs:
           path: test-reports
           destination: test-reports
 
+  register_cantaloupe_image:
+    docker:
+      - image: docker:git
+    working_directory: ~
+    steps:
+      - setup_remote_docker
+      - checkout
+      - run:
+          name: Build & Push Image
+          command: |
+            docker build -t cidr/histonets_cantaloupe:latest --build-arg CANTALOUPE_BRANCH=$CANTALOUPE_BRANCH --build-arg CANTALOUPE_VERSION=$CANTALOUPE_VERSION --build-arg BASE_URI=$CANTALOUPE_BASE_URI --build-arg ADMIN_ENABLED=$CANTALOUPE_ADMIN_ENABLED --build-arg ADMIN_PASSWORD=$CANTALOUPE_ADMIN_PASSWORD --build-arg AWS_ENDPOINT=$CANTALOUPE_AWS_ENDPOINT --build-arg AWS_BUCKET_NAME=$CANTALOUPE_AWS_BUCKET_NAME --build-arg AWS_BUCKET_REGION=$CANTALOUPE_AWS_BUCKET_REGION -f compose/production/cantaloupe/Dockerfile .
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker push cidr/histonets_cantaloupe:latest
+
   register_image:
     docker:
       - image: circleci/python:3.6.5-jessie-node
@@ -107,6 +121,14 @@ workflows:
   deploy_devel_to_dev:
     jobs:
       - run_tests:
+          filters:
+            branches:
+              only: devel
+            tags:
+              ignore: /.*/
+      - register_cantaloupe_image:
+          requires:
+            - register_cantaloupe_image
           filters:
             branches:
               only: devel
