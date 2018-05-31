@@ -57,9 +57,7 @@ const config = {
     extensions: ['.js', '.jsx', '.css', '.scss']
   }
 };
-console.log(process.env.WEBPACK_MODE)
 if (process.env.WEBPACK_MODE !== 'production') {
-  console.log("HERE")
   config.devtool = 'source-map';
   config.mode = 'development';
   config.devServer = {

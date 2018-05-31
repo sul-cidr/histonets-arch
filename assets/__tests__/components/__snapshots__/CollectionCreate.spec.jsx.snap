@@ -61,6 +61,7 @@ Object {
     },
     Object {
       "label": "image.jpg",
+      "name": null,
       "selected": true,
       "uri": "http://localhost:8182/iiif/2/image.jpg/full/max/0/default.jpg",
     },
@@ -3954,6 +3955,7 @@ Object {
     },
     Object {
       "label": "image.jpg",
+      "name": null,
       "selected": true,
       "uri": "http://localhost:8182/iiif/2/image.jpg/full/max/0/default.jpg",
     },
@@ -4001,6 +4003,7 @@ Object {
     },
     Object {
       "label": "image.png",
+      "name": null,
       "selected": true,
       "uri": "http://localhost:8182/iiif/2/image.png/full/max/0/default.jpg",
     },
@@ -4028,6 +4031,7 @@ Object {
     },
     Object {
       "label": "image.jpg",
+      "name": null,
       "selected": true,
       "uri": "http://localhost:8182/iiif/2/image.jpg/full/max/0/default.jpg",
     },

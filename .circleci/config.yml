@@ -31,11 +31,20 @@ jobs:
           name: Run python tests
           command: |
             . venv/bin/activate
-            python manage.py test
+            coverage run manage.py test
+      - run:
+          name: Run python coverage
+          command: |
+            . venv/bin/activate
+            coverage report
       - run:
           name: Run javascript tests
           command: |
             yarn test
+      - run:
+          name: Run javascript coverage
+          command: |
+            yarn coverage
       - store_test_results:
           path: test-results
       - store_artifacts:
@@ -90,7 +99,7 @@ jobs:
             vpc_id=$(aws ec2 describe-vpcs --filters "Name=tag:Environment,Values=dev" | jq --raw-output --exit-status '.Vpcs[].VpcId')
             subnet_id=$(aws ec2 describe-subnets --filters "Name=vpc-id,Values=$vpc_id" "Name=tag:Name,Values=dev-private-us-west-2a" | jq --raw-output --exit-status '.Subnets[].SubnetId')
             group_id=$(aws ec2 describe-security-groups --filters "Name=vpc-id,Values=$vpc_id" "Name=group-name,Values=histonets-dev-ecs-service-sg" | jq --raw-output --exit-status '.SecurityGroups[].GroupId')
-            aws ecs run-task --overrides '{ "containerOverrides": [{ "name": "histonets", "command": [ "python", "manage.py", "post_deploy", "--reset" ]}]}' --task-definition "$task_arn" --cluster "$cluster_arn" --network-configuration '{ "awsvpcConfiguration": { "subnets": [ "'"$subnet_id"'" ], "securityGroups": [ "'"$group_id"'" ], "assignPublicIp": "DISABLED" }}' --launch-type FARGATE
+            aws ecs run-task --overrides '{ "containerOverrides": [{ "name": "histonets", "command": [ "python", "manage.py", "post_deploy", "--email", "$DJANGO_ADMIN_EMAIL", "--username", "$DJANGO_ADMIN_USERNAME", "--password", "$DJANGO_ADMIN_PASSWORD", "--reset" ]}]}' --task-definition "$task_arn" --cluster "$cluster_arn" --network-configuration '{ "awsvpcConfiguration": { "subnets": [ "'"$subnet_id"'" ], "securityGroups": [ "'"$group_id"'" ], "assignPublicIp": "DISABLED" }}' --launch-type FARGATE
             aws ecs update-service --cluster "$cluster_arn" --service histonets --task-definition "$task_arn"
 
 workflows:

@@ -12,6 +12,7 @@ services:
     depends_on:
       - postgres
       - mailhog
+    restart: always
     volumes:
       - .:/app
     env_file:
@@ -27,6 +28,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/local/webpack/Dockerfile
+    restart: always
     volumes:
       - .:/app
     env_file:
@@ -40,6 +42,7 @@ services:
     build:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
+    restart: always
     volumes:
       - postgres_data_local:/var/lib/postgresql/data
       - postgres_backup_local:/backups
@@ -48,16 +51,19 @@ services:
 
   mailhog:
     image: mailhog/mailhog:v1.0.0
+    restart: always
     ports:
       - "8025:8025"
 
   redis:
     image: redis:3.0
+    restart: always
 
   cantaloupe:
     build:
       context: .
       dockerfile: ./compose/local/cantaloupe/Dockerfile
+    restart: always
     volumes:
       - ./media/iiif:/var/lib/cantaloupe/images
     ports:
@@ -70,10 +76,11 @@ services:
       - postgres
       - mailhog
     env_file:
+      - ./.envs/.local/.django
       - ./.envs/.local/.celery
       - ./.envs/.local/.postgres
     ports: []
-    restart: on-failure:5
+    restart: always
     command: /start-celeryworker.sh
 
   flower:
@@ -81,7 +88,9 @@ services:
     depends_on:
       - redis
       - postgres
+    restart: always
     env_file:
+      - ./.envs/.local/.django
       - ./.envs/.local/.celery
       - ./.envs/.local/.postgres
     ports:

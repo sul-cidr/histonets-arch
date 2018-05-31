@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col-5">
             <h2><a href="/collections/529">{{ collection.label }}</a></h2>
-              <p>{{ collection.description|default:"Description" }}.</p>
+              <p>{{ collection.description|default:"<em>Description</em>" }}</p>
           </div>
           <div class="col-5">
             {% for image in collection.images.all|slice:":4" %}
@@ -33,8 +33,15 @@
         <em class="text-muted">
           Status: Unstarted ·
           {% with num_images=collection.images.count %}
-            {{ num_images }} image{{ num_images|pluralize }}.
+            {{ num_images }} image{{ num_images|pluralize }}
           {% endwith %}
+          {% if not collection.is_histogram_ready %}
+            · Colors haven't been extracted yet.
+          {% else %}
+            {% with num_colors=collection.histogram.keys|length %}
+              · {{ num_colors }} color{{ num_colors|pluralize }}.
+            {% endwith %}
+          {% endif %}
         </em>
       </div>
     </div>

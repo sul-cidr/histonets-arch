@@ -29,7 +29,7 @@ export default class CollectionCreate extends Component {
     this.handleProgressEvent = this.handleProgressEvent.bind(this);
   }
 
-  getImagesFromUri(uri, label=null) {
+  getImagesFromUri(uri, label=null, name=null) {
     if (uri.endsWith('manifest.json')) {
       // / IIIF Manifest JSON
       return IIIF.getImagesFromIIIFManifest(uri).then(images => this.setState({
@@ -52,7 +52,7 @@ export default class CollectionCreate extends Component {
       this.setState({
         images: removeDuplicates([
           ...this.state.images,
-          {label: imageLabel, uri: imageUri, selected: true}
+          {label: imageLabel, uri: imageUri, selected: true, name}
         ], 'uri')
       });
       return true;
@@ -113,7 +113,9 @@ export default class CollectionCreate extends Component {
       }).then(response => {
         response.data.files
           .filter(file => file.status === 'ok')
-          .map(image => this.getImagesFromUri(image.uri, image.label));
+          .map(image => this.getImagesFromUri(
+            image.uri, image.label, image.name
+          ));
       });
     }
       return false; // eslint

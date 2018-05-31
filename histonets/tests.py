@@ -5,7 +5,7 @@ from django.core.management import CommandError, call_command
 from django.test import TestCase
 
 
-class ClosepollTest(TestCase):
+class PostDeployTest(TestCase):
     def setUp(self):
         os.environ['DJANGO_ADMIN_USERNAME'] = ''
         os.environ['DJANGO_ADMIN_PASSWORD'] = ''

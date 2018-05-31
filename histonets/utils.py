@@ -1,5 +1,11 @@
 import json
 import re
+from collections import Counter
+from functools import reduce
+
+import histonets_cv as cv
+
+from django.conf import settings
 from django.utils.text import re_camel_case
 
 
@@ -57,3 +63,13 @@ def to_react_props(dic):
     json_props = json.dumps(naming_convention(dic, underscore_to_camel))
     script = """<script>window.props = JSON.parse('{}')</script>"""
     return script.format(json_props)
+
+
+def download_image_uri_as_array(uri):
+    """Download an image from uri and turn it into a Numpy 3D RGB array."""
+    return cv.utils.Image.get_images([uri])[0]
+
+
+def combine_histograms(histograms):
+    """Reduce by key summing up the values."""
+    return dict(reduce(lambda x, y: x.update(y) or x, histograms, Counter()))

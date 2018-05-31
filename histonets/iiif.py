@@ -1,19 +1,24 @@
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 from django.conf import settings
 from django.core.files.storage import default_storage
 from django.utils.text import slugify
 
 
-def handle_uploaded_file(user, uploaded_file):
+def save_uploaded_file(prefix, uploaded_file):
     name, ext = uploaded_file.name.rsplit(".", 1)
     filename = "{}.{}".format(slugify(name), ext)
-    iiif_path = Path(settings.IIIF_DIR) / user.username / filename
+    iiif_path = Path(settings.IIIF_DIR) / prefix / filename
     iiif_unique_path = default_storage.save(str(iiif_path), uploaded_file)
     iiif_uri = quote(iiif_unique_path.replace(settings.IIIF_DIR, "")[1:],
                      safe="")
-    return settings.IIIF_CANONICAL_URI.format(iiif_uri)
+    return iiif_uri
+
+
+def delete_uploaded_file(uploaded_filename):
+    iiif_path = Path(settings.IIIF_DIR) / unquote(uploaded_filename)
+    default_storage.delete(str(iiif_path))
 
 
 def transform_iiif_image(uri, region="full", size="max", rotation=0,
