@@ -136,8 +136,6 @@ workflows:
             tags:
               ignore: /.*/
       - register_cantaloupe_image:
-          requires:
-            - register_cantaloupe_image
           filters:
             branches:
               only: devel
