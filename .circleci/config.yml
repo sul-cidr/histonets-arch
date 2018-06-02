@@ -154,6 +154,7 @@ workflows:
       - deploy_to_dev:
           requires:
             - register_image
+            - register_cantaloupe_image
           filters:
             branches:
               only: devel
