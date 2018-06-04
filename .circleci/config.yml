@@ -114,7 +114,7 @@ jobs:
             subnet_id=$(aws ec2 describe-subnets --filters "Name=vpc-id,Values=$vpc_id" "Name=tag:Name,Values=dev-private-us-west-2a" | jq --raw-output --exit-status '.Subnets[].SubnetId')
             group_id=$(aws ec2 describe-security-groups --filters "Name=vpc-id,Values=$vpc_id" "Name=group-name,Values=histonets-dev-ecs-service-sg" | jq --raw-output --exit-status '.SecurityGroups[].GroupId')
             aws ecs run-task --overrides '{ "containerOverrides": [{ "name": "histonets", "command": [ "python", "manage.py", "post_deploy", "--reset" ]}]}' --task-definition "$task_arn" --cluster "$cluster_arn" --network-configuration '{ "awsvpcConfiguration": { "subnets": [ "'"$subnet_id"'" ], "securityGroups": [ "'"$group_id"'" ], "assignPublicIp": "DISABLED" }}' --launch-type FARGATE
-            aws ecs update-service --cluster "$cluster_arn" --service histonets --task-definition "$task_arn"
+            aws ecs update-service --cluster "$cluster_arn" --service histonets --task-definition "$task_arn" --force-new-deployment
 
 workflows:
   version: 2
