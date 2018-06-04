@@ -1,5 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`utils getCSRFCookie returns nothing when the cookie is not present in document.cookie nor the DOM 1`] = `"token"`;
+
+exports[`utils getCSRFCookie returns the value from the DOM when cookie is not present 1`] = `"value"`;
+
 exports[`utils getCookie returns a cookie value from document.cookie 1`] = `"value"`;
 
 exports[`utils getCookie returns nothing when cookie is an empty string 1`] = `"value"`;

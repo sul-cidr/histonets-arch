@@ -5,7 +5,7 @@ import axios from 'axios';
 import Dropzone from 'react-dropzone';
 import Gallery from 'react-grid-gallery';
 
-import { getCookie, removeDuplicates } from '../utils';
+import { getCSRFCookie, removeDuplicates } from '../utils';
 import IIIF from '../iiif';
 
 
@@ -103,7 +103,7 @@ export default class CollectionCreate extends Component {
       return axios.post(this.props.uploadUrl, formData, {
         headers: {
           'X-Requested-With': 'XMLHttpRequest',
-          'X-CSRFToken': getCookie('csrftoken'),
+          'X-CSRFToken': getCSRFCookie('csrftoken'),
           'Content-Type': 'multipart/form-data',
         },
         onUploadProgress: (
