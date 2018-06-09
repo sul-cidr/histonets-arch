@@ -121,8 +121,11 @@ def task_teardown(**kwargs):
             cluster_arn = kwargs.get('cluster_arn')
             task_arn = kwargs.get('task_arn')
             logger.info("Attempting to stop AWS task '{}' ({})".format(
-                task_arn, cluster_arn))
-            if all(cluster_arn, task_arn):
+                str(task_arn), str(cluster_arn)))
+            if task_arn and cluster_arn:
                 output = ecs.stop_task(cluster=cluster_arn, task=task_arn)
                 logger.info("Stopping AWS task '{}': {}".format(task_arn,
                                                                 str(output)))
+            else:
+                logger.info("Missing AWS task ({}) or cluster ({})".format(
+                    str(task_arn), str(cluster_arn)))
