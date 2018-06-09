@@ -120,6 +120,8 @@ def task_teardown(**kwargs):
             ecs = boto3.client('ecs')
             cluster_arn = kwargs.get('cluster_arn')
             task_arn = kwargs.get('task_arn')
+            logger.info("Attempting to stop AWS task '{}' ({})".format(
+                task_arn, cluster_arn))
             if all(cluster_arn, task_arn):
                 output = ecs.stop_task(cluster=cluster_arn, task=task_arn)
                 logger.info("Stopping AWS task '{}': {}".format(task_arn,

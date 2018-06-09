@@ -30,9 +30,13 @@ def dispatcher(self, func, options, *args, **kwargs):
         return result
     elif terminate:
         task_logger.info("Terminating worker...")
-        self.app.control.revoke(dispatcher.request.id, terminate=True)
-        os.system('kill %d' % os.getppid())  # worker parent must die
+        task_logger.info("Task tearing down:", str(options))
         task_teardown(**options)
+        task_logger.info("Revoking:", str(dispatcher.request.id))
+        self.app.control.revoke(dispatcher.request.id, terminate=True)
+        pid = str(os.getppid())
+        task_logger.info("Killing worker parent:", pid)
+        os.system("kill {}".format(pid))  # worker parent must die
     return result
 
 
